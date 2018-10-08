@@ -1,0 +1,42 @@
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=6cm,y=2.0cm]
+\foreach \x in {-1,-0.8,-0.6,-0.4,-0.2,0,0.2,0.4,0.6,0.8,1}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\clip(-1.1,-0.3) rectangle (1.1,0.7);
+\draw (4.213643364971578,0.3) node[anchor=north west] {$y$};
+\draw (-0.38,0.3) node[anchor=north west] {$y_{4}$};
+\draw (2.9579444591417623,0.3) node[anchor=north west] {$y_{9}$};
+\draw (0.28,0.3) node[anchor=north west] {$y_{3}$};
+\draw (-1.0293879928920922,0.3) node[anchor=north west] {$y_{2}$};
+\draw (0.9580619019078557,0.3) node[anchor=north west] {$y_{1}$};
+\draw (-0.9636724914554541,0.55) node[anchor=north west,color=IndianRed] {\textit{Sequence} (9)};
+\draw [->,line width=1.2pt,color=DarkGray] (0.,0.) -- (-1.1,0.);
+\draw [->,line width=1.2pt,color=DarkGray] (0.,0.) -- (1.1,0.);
+\draw (0.16,.3) node[anchor=north west] {$y_{5}$};
+\draw (-0.23192150248532134,.3) node[anchor=north west] {$y_{6}$};
+\begin{scriptsize}
+\filldraw [DodgerBlue](1.,0.) circle (2.5pt);
+\filldraw [DodgerBlue](-1.,0.) circle (2.5pt);
+\filldraw [DodgerBlue](0.333,0.) circle (2.5pt);
+\filldraw [DodgerBlue](-0.333,0.) circle (2.5pt);
+\filldraw [DodgerBlue](0.2,0.) circle (2.5pt);
+\filldraw [DodgerBlue](-0.2,0.) circle (2.5pt);
+\filldraw [DodgerBlue](0.143,0.) circle (2.5pt);
+\filldraw [DodgerBlue](-0.143,0.) circle (2.5pt);
+\filldraw [DodgerBlue](0.111,0.) circle (2.5pt);
+\filldraw [DodgerBlue](-0.111,0.) circle (2.5pt);
+\filldraw [DodgerBlue](0.091,0.) circle (2.5pt);
+\filldraw [DodgerBlue](-0.091,0.) circle (2.5pt);
+\filldraw [DodgerBlue](1.,0.) circle (2.5pt);
+\filldraw [DodgerBlue](-1.,0.) circle (2.5pt);
+\filldraw [DodgerBlue](0.333,0.) circle (2.5pt);
+\filldraw [DodgerBlue](-0.333,0.) circle (2.5pt);
+\filldraw [DodgerBlue](0.2,0.) circle (2.5pt);
+\filldraw [DodgerBlue](-0.2,0.) circle (2.5pt);
+\filldraw [DodgerBlue](0.143,0.) circle (2.5pt);
+\filldraw [DodgerBlue](-0.143,0.) circle (2.5pt);
+\filldraw [DodgerBlue](0.111,0.) circle (2.5pt);
+\filldraw [DodgerBlue](-0.111,0.) circle (2.5pt);
+\filldraw [DodgerBlue](0.091,0.) circle (2.5pt);
+\filldraw [DodgerBlue](-0.091,0.) circle (2.5pt);
+\end{scriptsize}
+\end{tikzpicture}

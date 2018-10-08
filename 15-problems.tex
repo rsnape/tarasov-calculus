@@ -1,0 +1,259 @@
+% !TEX root = calculus.tex
+
+
+\chapter*{PROBLEMS}
+\addcontentsline{toc}{chapter}{\nameref{problems}}
+\label{problems}
+\begin{enumerate}[label=\textcolor{IndianRed}{Problem \arabic*},leftmargin=2cm]
+\item Find a formula for the nth term from the first several terms of the sequence:
+\begin{enumerate}[label=(\alph*)]
+\item $\dfrac{1}{11}, \,\,\dfrac{1}{21}, \,\,\dfrac{1}{31}, \,\,\dfrac{1}{41}, \,\,\dfrac{1}{51}, \,\, \ldots$
+\item $1, \,\, \dfrac{1}{4}, \,\, \sqrt{3} \,\, \dfrac{1}{16}, \,\, \sqrt{5}, \,\, \dfrac{1}{36}, \,\, \sqrt{7} \,\, \ldots$
+\item $ 1, - \left(\dfrac{1}{2} \right)^{2}, \,\, \left(\dfrac{1}{2 \cdot 3} \right)^{3}, \,\, - \left(\dfrac{1}{2 \cdot 3 \cdot 4} \right)^{4}, \,\, \ldots $
+\item  $\dfrac{3}{4}, \,\, - \left(\dfrac{6}{7} \right)^{2}, \,\, \left(\dfrac{9}{10} \right)^{3}, \,\, - \left(\dfrac{12}{13} \right)^{4}, \,\, \left(\dfrac{15}{16} \right)^{5}, \,\, \ldots $
+\end{enumerate}
+\Answer 
+\begin{enumerate}[label=(\alph*)]
+\item $y_{n} = \dfrac{1}{10n+1}$ 
+\item $y_{n} = \dfrac{\sqrt{n}}{2} [1 - ( -1)^{n}] + \dfrac{1}{2n^{2}} \, [1 + (-1)^{n}]$
+\item $y_{n} = \dfrac{(-1)^{n+1}}{(n!)^{n}} $
+\item $y_{n} = (-1)^{n+1} \left( \dfrac{3n}{3n+1} \right)^{n} $
+\end{enumerate}
+
+\item Find the least term of each sequence:
+\begin{enumerate}[label=(\alph*)]
+\item $y_{n} = n^{2} -5n + 1 $
+\item $y_{n} = n + \dfrac{100}{n}$ 
+\item $y_{n} = n + 5 \sin\dfrac{\pi n}{2}$ 
+\end{enumerate}
+\Answer
+\begin{enumerate}[label=(\alph*)]
+\item $  y_{2} = y_{3}= -5$
+\item $ y_{10} = 20 $
+\item $ y_{3} = -2$
+\end{enumerate}
+
+\item Find the largest term of each sequence:
+\begin{enumerate}[label=(\alph*)]
+\item $y_{n} = \dfrac{90n}{n^{2} + 9} $
+\item $y_{n} = \dfrac{10^{n}}{n!}$ 
+\end{enumerate}
+
+\Answer
+\begin{enumerate}[label=(\alph*)]
+\item $  y_{3}= 15$
+\item $ y_{9} = y_{10} = \dfrac{10^{9}}{9!} $
+\end{enumerate}
+
+\item Find which of the sequences given below are monotonic:
+\begin{enumerate}[label=(\alph*)]
+\item $y_{n} = 3n^{2} - n$
+\item $y_{n} = n^{2} - 3n $
+\item $y_{n} = 7n - n^{2} $
+\item $y_{n} =  \log \left( \dfrac{3}{4} \right)^{n}$
+\end{enumerate}
+
+\Answer
+\begin{enumerate*}[label=(\alph*)]
+\item Increasing,
+\item nondecreasing;
+\item non-monotonic;
+\item decreasing.
+\end{enumerate*}
+
+\item There are two sequences ($y_{n}$) and ($z_{n}$) such that $0 \leqslant y_{n} \leqslant z_{n}$ for all $n$. The sequence ($z_{n}$) is convergent and its limit is zero. Prove that the sequence ($y_{n}$) is convergent to zero. 
+
+\item Prove that
+\begin{enumerate}[label=(\alph*)]
+\item $ \lmts{n}{\infty} \dfrac{n}{2^{n}} =0;$
+\item $ \lmts{n}{\infty} (\sqrt{n+1} - \sqrt{n -1}) =0 $
+\end{enumerate}
+
+\textcolor{DodgerBlue}{Hint.} In problem (a) transform	
+\begin{equation*}%
+2^{n}= (1+1)^{n} = \left[ 1 + n + \dfrac{}{} + \ldots \right] > \left[ n + \dfrac{n(n- 1)}{2} \right] > \dfrac{n^{2}}{2}
+\end{equation*}
+and use the theorem proved in problem 5.
+
+In problem (b) transform	
+\begin{equation*}%
+\sqrt{n + 1} - \sqrt{n -1} = \dfrac{2}{\sqrt{n + 1} + \sqrt{n -1}} < \dfrac{2}{\sqrt{n-1}}
+\end{equation*}
+and	 use the theorem proved above. 
+
+\item Find the limits of the following sequencers:
+\begin{enumerate}[label=(\alph*)]
+\item $y_{n} =  \dfrac{2n + \dfrac{1}{n} +3}{ \left(\sqrt{n} + \sqrt{3} \right)^{2}}$
+\item $y_{n} =  \dfrac{5n^{2} \left( 1 + \dfrac{1}{n} \right)^{n}}{\dfrac{1}{n} - 3n^{2}}$
+\item $y_{n} =  \dfrac{\left( 1 + \dfrac{1}{n} \right)^{n} + \left( 1 + \dfrac{1}{2n} \right)^{2n}}{2 + \dfrac{1}{n} + \dfrac{1}{\sqrt{n}}}$
+\item $y_{n} =  \dfrac{2^{n} + n}{2^{n} + \sqrt{n}} (\sqrt{n + 1} - \sqrt{n - 1})$
+\end{enumerate}
+
+\Answer
+\begin{enumerate*}[label=(\alph*)]
+\item 2; 
+\item $- \dfrac{5}{3} e$; 
+\item $e$; 
+\item 0.
+\end{enumerate*}
+
+\item Find the function $f (x)$ if $3f (x-1)- f \left( \frac{1 -x}{x} \right)=2x$.
+
+\Answer
+$f(x)= \dfrac{3}{4} (x+1) + \dfrac{1}{4(x+1)}$.
+
+\item Find analytical relations and the natural domains of the following functions:
+\begin{enumerate}[label=(\alph*)]
+ \item $f (1 - x)$;
+ \item $f \left( \dfrac{1}{x} \right) $
+\end{enumerate}
+for $f(x) = \log (x^{2} - 1)$, 
+ 
+ \Answer  \begin{enumerate*}[label=(\alph*)]
+\item $\log (x^{2} - 2x); \,\, x < 0, \,\, x > 2$; 
+\item $\log \dfrac{1 - x^{2}}{x^{2}}; 0< |x |< 1$. 
+\end{enumerate*}
+
+\item Analyze the continuity and differentiability of the function $f (x) = \arcsin (sin x)$ within the limits of the natural domain of the function. 
+
+\Answer The natural domain of the function $f (x)$ is $]-\infty, \infty[$; the function is continuous everywhere; it is differentiable at all points with the exception of points
+\begin{equation*}%
+x = \pm \dfrac{\pi}{2}, \,\, \pm \dfrac{3 \pi}{2}, \,\, \pm \dfrac{5 \pi}{2}, \,\, \ldots
+\end{equation*}
+
+\item Prove that the function $f (x) = \sqrt[3]{x^{2}}$ has no derivative at point $x = 0$.
+
+\item Prove that $3x^{6} -	5x^{3} - 30x < 40$ if $|x| \leqslant 2$. 
+
+\textcolor{DodgerBlue}{Hint.} Find first that the maximum value of the polynomial $f (x) = 3x^{6} -	5x^{3} - 30x$: over the interval $[-2, \, 2]$ is below 40. To do this, find the values of $f (x)$ at the end points of the interval $[-2, \, 2]$ and at the points at which the derivative of $f (x)$ is zero (if these points belong to the indicated interval).
+
+\item Find the maximum and minimum values of the function $f(x) = x- 2 \ln x$ over the interval $[1, \, e]$. 
+
+\Answer The minimum value is $f(2)= 2- 2 \ln 2$, the maximum value is $f (1) = 1$.
+
+\item Find a point $x_{0}$ at which the tangent to the graph of the function $f (x) = x^{2} + 1$ is parallel to the straight line $y= 3x$.
+
+\Answer $x_{0} = \dfrac{3}{2}$.
+
+\item Write the equation of the tangent to the graph of the function $f (x) = x^{2} - 4x +5$ at point $x_{0} = 1$.
+
+ \Answer $y =- 2x + 4$.
+
+\textcolor{DodgerBlue}{Note.} The equation of the tangent to the graph of the function $f(x)$ at $x=x_{0}$ is: $y= f(x_{0}) + f'(x_{0}) (x- x_{0})$, where $f' (x_{0})$ is the value of the derivative of the function at $ x_{0}$.
+
+\item Find the derivatives of the following functions:
+\begin{enumerate}[label=(\alph*)]
+ \item $f(x) = \sqrt[n]{x}$;
+ \item $f(x) = \dfrac{1}{x^{2} + 3}$;
+ \item $f(x) = \sqrt{x^{2} + 5}$;
+ \item $f(x) = \tan^{2} x$;
+ \item $f(x) = \sin^{4} 5x $;
+ \item $f(x) = \arcsin \sqrt{x}$;
+ \item $f(x) = \ln \dfrac{x^{2} -1 }{10}$;
+ \item $f(x) = \ln \dfrac{1 + x}{\sqrt{1 + x^{2}}}$.
+ \end{enumerate}
+
+\Answer \begin{enumerate}[label=(\alph*)]
+ \item $ \dfrac{1}{n \, \sqrt[n]{x^{n -1}}}$;
+ \item $- \dfrac{2x}{(x^{2} + 3)^{2}}$;
+ \item $\dfrac{x}{\sqrt{x^{2}+5}}$;
+ \item $\dfrac{2 \sin x}{\cos^{2} x}$;
+ \item $20 \sin^{2} 5x \, \cos 5x$;
+ \item $\dfrac{1}{2 \sqrt{x(1 -x)}}$;
+ \item $\dfrac{2x}{x^{2} -1 }$;
+ \item $\dfrac{1 - x}{(1 + x)(1 + x^{2})}$.
+ \end{enumerate}
+
+\item Verify that the functions 
+\begin{align*}%
+F_{1} & = \cos^{2} x + \cos^{4} x \\ 
+F_{2} & = \cos 2x - \dfrac{1}{4} \sin^{2} 2x \\
+F_{3} & = \cos^{4} x + 3 \cos^{2} x + \sin^{2} x 
+\end{align*}
+are the antiderivatives of one and the same function. Find $F_{2} - F_{1}$ and $F_{3} - F_{1}$. 
+
+\Answer $F_{2} - F_{1} = 1$;  $F_{3} - F_{1} = 2$.
+
+\item Find the area of the curvilinear trapezoid described by the graph of the function $f (x) = x^{2} + 1$ over the inter- val $[-3, 3]$. 
+
+\Answer 24.
+
+\item Find the difference in areas of the curvilinear trapezoids defined by the graphs of the functions $f_{1} = e^{x}$ and $f_{2} = e^{-x}$ over the interval $[0, 1]$.
+\Answer $ e +  \dfrac{1}{e}$.
+
+\item Find the value of a minimizing the area of the curvilinear trapezoid defined by the graph of the function $f (x) = (x - a)^{2} +a^{2}$ over the interval $[0, 1]$.
+
+\Answer $a = \dfrac{1}{4}$.
+
+\item Find the area of a figure bounded by the graph of the function $f (x) = x^{2} - 2x +2$ and two tangents to this graph, drawn at points $x_{1} = 0$ and $x_{2} = 2$.
+
+\Answer $ \dfrac{2}{3}$.
+
+\item Find the numbers obtained by evaluating the integral 
+$\displaystyle\int_{1}^{2} f(x) \, dx$ of the following functions: 
+
+\begin{enumerate}[label=(\alph*)]
+ \item $f(x) = \dfrac{1}{x}$;
+ \item $f(x) = \dfrac{1}{x^{2}}$;
+ \item $f(x) = \dfrac{1}{x^{3}}$;
+ \item $f(x) = \dfrac{1}{x^{4}}$;
+ \end{enumerate}
+
+\Answer \begin{enumerate*}[label=(\alph*)]
+\item $\ln 2$; 
+\item $ \dfrac{1}{2}$;
+\item $\dfrac{3}{8}$; 
+\item $ \dfrac{17}{24}$.
+ \end{enumerate*}
+
+\item Find the functions obtained by evaluating the integral $\displaystyle\int_{1}^{x} f(t) \, dt$ of the following functions: 
+\begin{enumerate}[label=(\alph*)]
+ \item $f(t) = \dfrac{1}{t}$;
+ \item $f(t) = \dfrac{1}{t^{2}}$;
+ \item $f(t) = \dfrac{1}{t^{3}}$;
+ \item $f(t) = \dfrac{1}{t^{4}}$;
+ \end{enumerate}
+ 
+\Answer \begin{enumerate*}[label=(\alph*)]
+\item $\ln x$; 
+\item $ - \dfrac{1}{x} + 1$;
+\item $ - \dfrac{2}{x^{2}} +\dfrac{1}{2}$; 
+\item $ - \dfrac{1}{3x^{3}} + \dfrac{1}{3}$.
+ \end{enumerate*}
+ 
+\item Verify that $f (x) = (x +1) e^{x}$ satisfies the equation $f'(x)- f(x)=e^{x}$.
+
+\item Find a particular solution of the equation $f' (x) = f (x)$ such that $f(x)= 2$ for $x=2$. 
+
+\Answer $f (x)= 2 \exp \, (x- 2)$.
+
+\item Consider the equation $f' (x) = f (x)$. Find a particular solution for which the tangent to the graph at point $x_{0}$ intersects the ordinate axis at point $y_{1}$.
+
+\Answer $f (x) = \dfrac{y_{1}}{1 - x_{0}} \exp (x - x_{0})$.
+
+\textcolor{DodgerBlue}{Hint.} Make use of the equation of tangent (see Note to problem 15).
+
+\item Consider the graphs of different particular solutions of the equation $f' (x) = f (x)$. Verify that at the same point $x_{0}$ the tangents to all these graphs intersect the abscissa axis at a common point $x = x_{0} -1$.
+
+\item  Find the $n$th derivative of the following functions: 
+\begin{enumerate}[label=(\alph*)]
+ \item $f(x) = \sin x$;
+ \item $f(x) = \cos x$.
+ \end{enumerate}
+
+\Answer  \begin{enumerate}[label=(\alph*)]
+ \item $f(x) = \sin \left( x + \dfrac{n \pi}{2} \right)$;
+ \item $f(x) = \cos \left( x + \dfrac{n \pi}{2} \right)$.
+\end{enumerate}
+
+
+\item  Find the value of the fourth derivative of the function $f (x) = \ln x$ for $x = 2$.
+
+\Answer $ - \dfrac{3}{8}$.
+
+\item Find the area of the curvilinear trapezoid defined by the graph of the third derivative of the function $f (x) = x^{5} - 2 x^{2} + x -1 $ over the interval $[0, 1]$.
+
+\Answer 20.
+
+\end{enumerate}
+\cleardoublepage

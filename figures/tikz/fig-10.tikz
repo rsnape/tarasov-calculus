@@ -1,0 +1,25 @@
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.5cm,y=.6cm]
+\clip(-8,-3) rectangle (7,4);
+\fill[line width=2.pt,color=DimGray,fill=DarkGray,fill opacity=0.25,rounded corners=8pt] (3.,2.) -- (-3.,2.) -- (-3.,-1.) -- (3.,-1.) -- cycle;
+\filldraw[DimGray] (2.5,1.75) -- (-2.5,1.75) -- (-2.5,1.1) -- (2.5,1.1) -- cycle;
+
+\draw [line width=.75pt,color=IndianRed] (6.,3.) circle (12pt);
+\draw [line width=.75pt,color=IndianRed] (6.,3.) circle (8pt);
+%\draw [line width=1.2pt,color=DarkGray] (3.,2.)-- (-3.,2.);
+%\draw [line width=1.2pt,color=DarkGray] (-3.,-1.)-- (3.,-1.);
+%\draw [line width=1.2pt,color=DarkGray] (-3.,-1.)-- (-3,2.);
+%\draw [line width=1.2pt,color=DarkGray] (3.,-1.)-- (3.,2.);
+\draw [line width=.75pt,color=IndianRed] (-6.,-2.) circle (12pt);
+\draw [line width=.75pt,color=IndianRed] (-6.,-2.) circle (8pt);
+\draw (-.1,0.7)node[color=black] {\footnotesize \textit{``Black Box''}};
+\draw (-0.1,0.)node[color=black] {\footnotesize Working as a };
+\draw (0.,-0.6)node[color=black] {\footnotesize Function};
+\draw (6,3) node[color=black] {$x$};
+\draw (6,2.4) node[color=black](one) {};
+\draw (-6,-2) node[color=black] {$y$};
+\draw (-5.4,-2) node[color=black] (two) {};
+\draw (0,1.85) node[color=black](onea){};
+\draw (0,-.9) node[color=black](twoa){};
+\path (one) edge[-{latex},line width=2.5pt,in=90,out=270,color=DodgerBlue] (onea);
+\path (twoa) edge[-{latex},line width=2.5pt,in=0,out=270,color=DodgerBlue] (two);
+\end{tikzpicture}

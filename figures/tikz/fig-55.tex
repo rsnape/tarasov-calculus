@@ -1,0 +1,43 @@
+%!tikz editor 1.0
+\documentclass{article}
+\usepackage[svgnames]{xcolor}
+\usepackage{tikz}
+\usepackage[graphics, active, tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\usepackage{pgfplots}
+%!tikz preamble begin
+\usepackage[svgnames]{xcolor}
+\usetikzlibrary{decorations.pathmorphing,patterns}
+%!tikz preamble end
+
+
+\begin{document}
+%!tikz source begin
+\begin{tikzpicture}
+
+\draw[-latex, thick,color=gray] (-1,0) -- (1.5,0) node[below, color=gray] {$x$}; 
+\draw[-latex, thick,color=gray] (0,0) -- (0,1.5) node[below left, color=gray] {$y$}; 
+
+
+\draw[color=DodgerBlue, domain=1:-.5]	plot [smooth ] (\x,{.6*(((\x+.1)*(\x+.1)) +.1)});
+
+\draw[color=DodgerBlue, domain=1:-.5]	plot [smooth ] (\x,{.6*(((\x+.1)*(\x+.1)) +.4)});
+
+\draw[color=IndianRed,domain=1:-.5]	plot [smooth ] (\x,{.6*(((\x+.1)*(\x+.1)) +.7)});
+
+\draw[color=DodgerBlue,domain=1:-.5]	plot [smooth ] (\x,{.6*(((\x+.1)*(\x+.1)) +1.1)});
+
+\draw[color=DodgerBlue,domain=1:-.5]	plot [smooth ] (\x,{.6*(((\x+.1)*(\x+.1)) +1.4)});
+
+
+\fill [ color=gray] (0,.8)  circle [radius=.055]  node[ above left, color=gray] {$y_{0}$};
+\fill [ color=gray] (0.7,0)  circle [radius=.055]  node[ below, color=gray] {$x_{0}$};
+
+\draw [color=gray] (0,0) node[ below , color=gray] {0};
+
+\draw[color=gray,dashed] (0,0.8) -- (0.7,0.8) -- (0.7,0);
+
+\end{tikzpicture}
+%!tikz source end
+
+\end{document}

@@ -1,0 +1,46 @@
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,rounded corners,scale=1.5]
+\clip(-2.2,-1.1) rectangle (4.5,5);
+% \draw[step=.5cm,gray,very thin] (-3,-3) grid (6,6);
+{\footnotesize
+\draw (0,0) node[color=black,below](0a){0};
+\draw (0,-.75) node[color=black,below]{D};
+\draw (-2,0) node[color=black,below](-2a) {-1};
+\draw (2,0) node[color=black,below](2a) {1};
+\draw (-1.5,0) node[color=black,below](-15a) {};
+\draw (1.5,0) node[color=black,below](15a) {};
+\draw (-1,0) node[color=black,below](-1a) {};
+\draw (1,0) node[color=black,below](1a) {};
+\draw (-.5,0) node[color=black,below](-5a) {};
+\draw (.5,0) node[color=black,below](5a) {};
+
+\draw (3.5,1.5) node[color=black,right](0b){0};
+\draw (4.2,2.7) node[color=black,right]{E};
+\draw (3.5,4) node[color=black,right](2b) {1};
+\draw (3.5,3.90) node[color=black,right](3b) {};% {0.96};
+\draw (3.5,3.65) node[color=black,right](4b){};% {0.86};
+\draw (3.5,3.15) node[color=black,right](5b){};% {0.66};
+
+
+\draw [->,line width=1.2pt,color=DarkGray] (-2.5,0.) -- (3.5,0.);
+\draw [->,line width=1.2pt,color=DarkGray] (3.5,1.) -- (3.5,5.);
+
+\path (0a) edge[-{latex},line width=1.5pt,in=180,out=90,color=DodgerBlue] (2b);
+
+\path (2a) edge[-{latex},line width=1.5pt,in=180,out=90,color=DodgerBlue] (0b);
+\path (-2a) edge[-{latex},line width=1.5pt,in=180,out=90,color=DodgerBlue,looseness=.8] (0b);
+
+
+\path (15a) edge[-{latex},line width=1.5pt,in=180,out=90,color=DodgerBlue] (5b);
+\path (-15a) edge[-{latex},line width=1.5pt,in=180,out=90,color=DodgerBlue,looseness=.8] (5b);
+
+\path (1a) edge[-{latex},line width=1.5pt,in=180,out=90,color=DodgerBlue] (4b);
+\path (-1a) edge[-{latex},line width=1.5pt,in=180,out=90,color=DodgerBlue,looseness=.8] (4b);
+
+\path (5a) edge[-{latex},line width=1.5pt,in=180,out=90,color=DodgerBlue] (3b);
+\path (-5a) edge[-{latex},line width=1.5pt,in=180,out=90,color=DodgerBlue,looseness=.8] (3b);
+
+\draw [decoration={brace,amplitude=20pt},decorate,rotate=-90,color=DarkGray,line width=.5pt] ($(2a)+(0.25em,.5ex)$) -- ($(-2a)+(0.25em,-.5ex)$);
+
+\draw [decoration={brace,amplitude=20pt},decorate,rotate=-90,color=DarkGray,line width=.5pt] ($(2b)+(0.25em,.5ex)$) -- ($(0b)+(0.25em,.5ex)$);
+}
+\end{tikzpicture}

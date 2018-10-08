@@ -1,0 +1,402 @@
+% !TEX root = calculus.tex
+
+\chapter{MORE ON FUNCTION}
+\label{more-on-function}
+{\parindent=0pt
+\athr Let us discuss the methods of defining functions. One of them has already been employed quite extensively. I mean the \emph{analytical description} of a function by some \emph{formula}, that is, an \emph{analytical expression} (for example, expressions \eqref{fn-ex-01} through \eqref{fn-ex-09} examined at the end of the preceding dialogue).
+
+\rdr As a matter of fact, my concept of a function was practically reduced to its representation by a' formula. It was a formula that I had in mind whenever I spoke about a dependence of a variable $y$ on a variable $x$.
+
+\athr Unfortunately, the concept of a function as a formula relating $x$ and $y$ has long been rooted in the minds of students. This is, of course, quite wrong. A function and its formula are very different entities. It is one thing to define a function as a mapping of one set (in our case it is a numerical set) onto another, in other words, as a ``black box'' that generates a number at the output in response to a number at the input. It is quite another thing to have just a formula, which represents only one of the ways of defining a function. It is wrong to \emph{identify} a function with a formula giving its analytical description (unfortunately, it happens sometimes).
+
+\rdr It seems that after the discussion in the previous dialogue about the function, such identification in a general case is automatically invalidated. However, if we confine ourselves only to numerical functions and if we bear in mind that working with a function we always use a formula to describe it, a question arises: Why is it erroneous to identify these two notions? Why should we always emphasize the difference between the function and its formula?
+
+\athr I'll tell you why. First, not every formula defines a function. Actually, at the end of the previous dialogue we already had such an example. I shall give you some more: 
+\begin{align*}%
+y &= \dfrac{1}{\sqrt{x}} +  \dfrac{1}{\sqrt{-x}}   \\
+y &= \log x + \log \, (-x), \\
+y & = \sqrt{\sin x - 2}, \\
+y & = \log \, (\sin x - 2), \,\, \text{etc.} 
+\end{align*}
+These formulas do not represent any functions.
+
+Second (and this is more important), not all functions can be written as formulas. One example is the so-called \emph{Dirichlet function} which is defined on the real line:
+\begin{equation*}%
+y = 
+\begin{cases}
+ 1 & \text{ if $x$ is a rational number} \\
+ 0 & \text{ if $x$ is an irrational number }
+\end{cases}
+\end{equation*}
+\rdr You call \emph{this} a function?
+
+\athr It is certainly an unusual function, but still a function. It is a mapping of a set of rational numbers to unity and a set of irrational numbers to zero. The fact that you cannot suggest any analytical expression for this function is of no consequence (unless you invent a special symbol for the purpose and look at it as a formula).
+
+However, there is one more, third and probably the most important, reason why functions should not be identified with their formulas. Let us look at the following expression:
+\begin{equation*}%
+y = 
+\begin{cases}
+\cos x &  x < 0 \\
+1 + x^{2} & 0 \leqslant x \leqslant 2 \\
+\log \, (x - 1) & x > 2 
+\end{cases}
+\end{equation*}
+How many functions have I defined here? 
+
+\rdr Three functions: a cosine, a quadratic function, and a logarithmic function. 
+
+\athr You are wrong. The \emph{three formulas} ($y = \cos x, \,\,
+y = 1 + x^{2}$, and $y=\log (x- 1)$) define in this case a \emph{single function}. It is defined on the real line, with the law of numerical correspondence given as $y = \cos x$ over the interval $]-\infty, 0 \, [$, as $y = 1 + x^{2}$ over the interval $[0,2]$, and as $y = \log (x - 1)$ over the interval $]2, \infty \,[$.
+
+\rdr I've made a mistake because I did not think enough about the question.
+
+\athr	No, you have made the mistake because subconsciously you identified a function with its analytical expression, i.e. its formula. Later on, operating with functions, we shall use formulas rather extensively. However, you should never forget that a formula is not all a function is, It is only one way of defining it.
+
+The example above illustrates, by the way, that one should not identify such notions as the \emph{domain of a function} and the \emph{range of} $x$ on which an analytical expression is defined (i.e. the domain of an analytical expression). For example, the expression $1 + x^{2}$ is defined on the real line. However, in the example above this expression was used to define the function only over the interval $[0, 2]$.
+
+It should be emphasized that the question about the domain of a function is of principal significance. It goes without saying that the domain of a function cannot be wider than the domain of an analytical expression used to define this
+function. But it can be narrower.
+
+\rdr Does it mean that a cosine defined, for example, over the interval $[0, \pi]$ and a cosine defined over the interval $[\pi, 3\pi]$ are two different functions?
+
+\athr Strictly speaking, it does. A cosine defined, for example, on the real line is yet another function. In other words, using cosine we may, if we wish, define any number of different functions by varying the domain of these functions. 
+
+In the most frequent case, when the domain of a function coincides with the domain of an analytical expression for the function, we speak about a \emph{natural} domain of the function. Note that in the examples in the previous dialogue we dealt with the natural domains of the functions. A natural domain is always meant if the domain of a function in question is not specified (strictly speaking, the domain of a function should be specified in every case).
+
+\rdr It turns out that one and the same function can be described by different formulas and, vice versa, one and the same formula can be used to ``construct'' different functions.
+
+\athr In the history of mathematics the realization of this fact marked the final break between the concept of a function and that of its analytical expression. This actually happened early in the 19th century when Fourier, t.he French mathematician, very convincingly showed t.hat it is quite irrelevant whether one or many analytical expressions are used to describe a function. Thereby an end was put to the very long discussion among mathematicians about. Identifying a function with its analytical expression.
+
+It should be noted that similarly to other basic mathematical concepts, the concept of a function went through a long history of evolution. The term ``function'' was introduced by the German mathematician Leibnitz late in the 17th century. At that time this term had a rather narrow meaning and expressed a relationship between geometrical objects. The definition of a functional relationship, freed from geometrical objects, was first formulated early in the 18th century by Bernoulli. The evolution of the concept of a function can be conventionally broken up into three main stages. During the first stage (the 18th century) a function was practically identified with its analytical expression. During the second stage (the 19th century) the modern concept of a function started to develop as a mapping of one numerical set onto another. With the development of the general theory of sets, the third stage began (the 20th century) when the concept of a function formerly defined only for numerical sets was generalized over the sets of an arbitrary nature.
+
+\rdr It appears that by overestimating the role of a formula we inevitably slip back to the concepts of the 18th century.
+
+\athr Let us discuss now one more way of defining a function, namely, the \emph{graphical method}. The \emph{graph} of a function $y = f(x)$ is a set of points on the plane $(x, y)$ whose abscissas are equal to the values of the independent variable $(x)$, and whose ordinates are the corresponding values of the dependent variable $(y)$. The idea of the graphical method of defining a function is easily visualized. \fig{fig-14}\textcolor{IndianRed}{($a$)} plots the graph of the function
+\begin{equation*}%
+y = 
+\begin{cases}
+\cos x &  x < 0 \\
+1 + x^{2} & 0 \leqslant x \leqslant 2 \\
+\log \, (x - 1) & x > 2 
+\end{cases}
+\end{equation*}
+discussed earlier. For a comparison, the graphs of the functions $y = \cos x, \, y = 1 +x^{2}$, and $y = \log \, (x -1)$ within their natural domains of definition in tho same figure (cases ($b$), ($c$), and ($d$)).
+\begin{figure}[!h]
+\centering
+\input{figures/tikz/fig-14.tikz}
+\input{figures/tikz/fig-14b.tikz}
+\input{figures/tikz/fig-14c.tikz}
+%\includegraphics[width=\textwidth]{figures/fig-14.pdf}
+\caption{The graphs of the functions $y = \cos x, \, y = 1 +x^{2}$, and $y = \log \, (x -1)$.}
+\label{fig-14}
+\end{figure}
+
+\rdr In \fig{fig-14}\textcolor{IndianRed}{($a$)} I notice an open circle. What does it mean?
+
+\athr This circle graphically represents a point excluded from the graph. In this particular case the point $(2, 0)$ does not belong to the graph of the function.
+\fig{fig-15} plots the graphs of the functions that were discussed at the end of the previous dialogue. Let us have a close look at them.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/fig-15.pdf}
+\caption{A variety of functions and their domains.}
+\label{fig-15}
+\end{figure}
+
+\rdr Obviously, in all the cases shown in \fig{fig-15} the domain of the function is supposed coinciding with the domain of the corresponding analytical expression.
+
+\athr Yes, you are right. In cases ($b$), ($c$), ($d$), and ($e$) these domains are infinite intervals. Consequently, only a part of each graph could be shown.
+
+\rdr In other cases, however, such as ($g$), ($h$), and ($i$), the domains of the functions are intervals of finite length. But here as well the figure has space for only a part of each graph.
+
+\athr That is right. The graph is presented in its complete form only in cases ($a$) and ($f$). Nevertheless, the behaviour of the graphs is quite clear for all the functions in \fig{fig-15}.
+
+The cases which you noted, i.e. ($g$), ($h$), and ($i$), are very interesting. Here we deal with the unbounded function defined over the finite interval. The notion of boundedness (unboundedness) has already been discussed with respect
+to numerical sequences (see \hyperref[infinite-seq]{Dialogue One}). Now we have to extrapolate this notion to functions defined over intervals.
+\begin{mytheo}{Definition}
+A function $y = f (x)$ is called \emph{bounded} over an interval $D$ if one can indicate two numbers $A$ and $B$ such that 
+\begin{equation*}
+A \leqslant f (x) \leqslant B \quad \text{for all $x \in D$} .
+\end{equation*}
+\end{mytheo}
+If not, the function	is called \emph{unbounded}. 
+
+Note that within infinite intervals you may define both bounded and unbounded functions. You are familiar with examples of bounded functions: $y = \sin x$ and $y = \cos x$. Examples of unbounded functions are in \fig{fig-15} (cases ($b$),
+($c$), ($d$), and ($e$)).
+
+\rdr Over the intervals of finite length both bounded and unbounded functions may also be defined. Several illustrations of such functions are also shown in \fig{fig-15}: the functions in cases ($a$) and ($f$) are bounded; the functions in cases ($g$), ($h$), and ($i$) are unbounded.
+
+\athr You are right.
+
+\rdr I note that in the cases that I have indicated the bounded functions are defined over the closed intervals ($[-1, 1]$ for ($a$) and $[1, 2]$ for ($f$)), while the unbounded functions are defined both over the open and half-open intervals ($]1, 2[$ for ($g$), $]1, 2]$ for ($h$), and $[1, 2[$ for ($i$)).
+
+\athr This is very much to the point. However, you should bear in mind that it is possible to construct bounded functions defined over open (half-open) intervals, and unbounded functions defined over closed intervals. Here are two simple illustrations:
+
+\textcolor{IndianRed}{\textbf{Example 1:}}  $y= x^{2}  \quad 0 \leqslant x< 2$ \\
+\textcolor{IndianRed}{\textbf{Example 2:}}  
+\begin{equation*}%
+y = 
+\begin{cases}
+ \dfrac{1}{x} &  0 \leqslant x< 2\\
+ 1 & x =0
+\end{cases}
+\end{equation*}
+
+The graphs of these functions are shown in \fig{fig-16}. 
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.75\textwidth,angle=-1]{figures/fig-16.pdf}
+\caption{Examples of bounded functions defined over open (half-open) intervals, and unbounded functions defined over closed intervals.}
+\label{fig-16}
+\end{figure}
+
+\rdr It seems that the boundedness (unboundedness) of a function and the finiteness of the interval over which it is defined are not interrelated, Am I right?
+
+\athr Not completely. There is, for example, the following theorem.
+\begin{mytheo}{Theorem}
+If a function is defined over a closed interval and if it is monotonic, the function is bounded.
+\end{mytheo}
+\rdr Obviously, the monotonicity of a function is determined similarly to the monotonicity of a numerical sequence.
+
+\athr Yes, it is. Monotonic functions can be classified, as sequences, into non-decreasing and non-increasing:
+\begin{mytheo}{Definition}
+\label{monotonic-def}
+A function $y = f (x)$ is said to be \emph{non-decreasing} over an interval $D$ it for any $x_{1}$ and $x_{2}$ from this interval $f(x_{1}) \leqslant 
+ f(x_{2})$ if $(x_{1} \leqslant  x_{2}$.  If, however, $f(x_{1}) \geqslant 
+ f(x_{2})$, the function is said to be \emph{non-increasing}.
+\end{mytheo}
+Can you prove the theorem formulated above? 
+
+\rdr Let the function $y = f (x)$ be defined over the closed interval $[a, b]$. We denote $f (a) = y_{a}$ and $f (b) = y_{b}$. To make the case more specific, let us assume that the function is non-decreasing. It means that $y_{a} \leqslant y_{b}$. I don't know how to proceed.
+
+\athr Select an arbitrary point $x$ over the interval $[a, b]$.
+
+\rdr Since $a \leqslant x$ and $x \leqslant b$, then, according to the condition of the above theorem, $y_{a} \leqslant f(x)$ and $f(x) \leqslant y_{b}$. Thus, we get that $y_{a}  \leqslant f(x) \leqslant y_{b} $ for all $x$ in the domain of the function. This completes the proof. 
+
+\athr Correct. So, if a \emph{monotonic} function is defined over a closed interval, it is bounded. As to a \emph{non-monotonic} function defined over a closed interval, it may be either
+bounded (\fig{fig-15}\textcolor{IndianRed}{($a$)} and ($f$)) or unbounded (\fig{fig-15}\textcolor{IndianRed}{($b$)}). 
+
+And now answer the following question: Is the function $y = \sin x$ monotonic? 
+
+\rdr No, it isn't. 
+
+\athr Well, your answer is as vague as my question. First we should determine the domain of the function. If we consider the function $y = \sin x$ as defined on the natural domain (on the real line), then you are quite right. If, however, the domain of the function is limited to the interval $\left[-\dfrac{\pi}{2}, \dfrac{\pi}{2} \right]$ the function becomes monotonic (non-decreasing).
+
+\rdr I see that the question of the boundedness or monotonicity of any function should be settled by taking into account both the type of the analytical expression for the function and the interval over which the function is defined.
+
+\athr This observation is valid not only for the boundedness or monotonicity but also for other properties of functions. For example, is the function $y = 1 - x^{2}$ an \emph{even} function?
+
+\rdr Evidently the answer depends on the domain of the function.
+
+\athr Yes, of course. If the function is defined over an interval symmetric about the origin of coordinates (for example, on the real line or over the interval $[-1, 1]$), the graph of the function will be symmetric about the straight line $x= 0$. In this case $y= 1- x^{2}$ is an even function. If, however, we assume that the domain of the function is $[-1, 2]$, the symmetry we have discussed above is lost (\fig{fig-17}) and, as a result, $y = 1 - x^{2}$ is not even.
+\begin{figure}[!ht]%{r}{0.5\textwidth}
+\centering
+\includegraphics[width=0.5\textwidth,angle=1]{figures/fig-17.pdf}
+\caption{ Is the function $y = 1 - x^{2}$  \emph{even}?}
+\label{fig-17}
+\end{figure}
+
+
+\rdr It is obvious that your remark covers the case of odd functions as well.
+
+\athr Yes, it does. Here is a rigorous definition of an even function.
+\begin{mytheo}{Definition}
+A function $y= f (x)$ is said to be \emph{even} if it is defined on a set $D$ symmetric about the origin and if $f (-x) = f (x)$ for all $x \in D$.
+\end{mytheo}
+By substituting $f (-x) = -f(x)$ for $f (-x) = f (x)$, we obtain the definition of an odd function.
+
+But let us return to monotonic functions. If we drop the equality sign in the definition of a monotonic function (see p.~\pageref{monotonic-def}) (in $f (x_{1}) \leqslant f (x_{2})$ or $f (x_{1}) \leqslant f (x_{2})$), we obtain a so-called \emph{strictly monotonic function}. In this case a non-decreasing function becomes an \emph{increasing function} (i.e. $f (x_{1}) < f (x_{2})$) . Similarly, a non-increasing function becomes a \emph{decreasing function} (i.e. $f (x_{1}) > f (x_{2})$ ). In all the previous illustrations of monotonic functions we actually dealt with strictly monotonic functions (either increasing or decreasing).
+\begin{figure}[!h]
+\centering
+\includegraphics[width=\textwidth]{figures/fig-18.pdf}
+\caption{ Concept of an \emph{inverse} function.}
+\label{fig-18}
+\end{figure}
+Strictly monotonic functions possess an interesting property: \emph{each has an inverse function}.
+
+\rdr The concept of an \emph{inverse function} has already been used in the previous dialogue in conjunction with the possibility of mapping a set of equilateral triangles onto a set of circles. We saw that the \emph{inverse mapping}, i.e. the mapping of the set of circles onto the set of equilateral triangles, was possible.
+
+\athr That's right. Here we shall examine the concept of an inverse function in greater detail (but for numerical functions). Consider \fig{fig-18}. Similarly to the graphs presented in \fig{fig-13}, it shows three functions:
+
+\begin{tabular}{lll}
+%\begin{enumerate}[label=(\alph*), leftmargin=2cm]
+(a) & $y= \sqrt{1-x^{2}}$ & $-1 \leqslant x \leqslant 1$ \\
+(b) & $y= \sin x$ &   $- \dfrac{\pi}{2} \leqslant x \leqslant \dfrac{\pi}{2}$\\
+(c) & $y= \cos x$ &  0 $\leqslant x  \leqslant  \pi$
+%\end{enumerate}
+\end{tabular}
+
+Here we have three mappings of one numerical set onto another. In other words, we have three mappings of an interval onto another interval. In case (a) the interval $[-1, 1]$ is mapped onto the interval $[0, 1]$; in (b) the
+interval $\left[-\dfrac{\pi}{2}, \dfrac{\pi}{2} \right]$ is mapped onto the interval $[-1, 1]$; and in (c) the interval $[0, \pi]$ is mapped onto the interval $[-1, 1]$.
+What is the difference between mappings (b) and (c), on the one hand, and mapping (a), on the other?
+
+\rdr In cases (b) and (c) we have a one-to-one correspondence, i.e. each point of the set $D$ corresponds to a single point of the set $E$ and vice versa, i.e. each point of $E$ corresponds to only one point of $D$. In case (a), however, there is no one-to-one correspondence.
+
+\athr Yes, you are right. Assume now that the directions of all the arrows in the figure are reversed. Now, will the mappings define a function in all the three cases?
+
+\rdr Obviously, in case (a) we will not have a function since then the reversal of the directions of the arrows produces a forbidden situation, namely, one number corresponds to two numbers. In cases (b) and (c) no forbidden situation occurs so that in these cases we shall have some new functions.
+
+\athr That is correct. In case (b) we shall arrive at the function $y = \arcsin x$, which is the inverse function with respect to $y = \sin x$ defined over the interval $\left[-\dfrac{\pi}{2}, \dfrac{\pi}{2} \right]$.
+
+In case (c) we arrive at the function $y =\arccos x$, which is the inverse function with respect to $y = \cos x$ defined over $[0, \pi]$.
+
+I would like to place more emphasis on the fact that in order to obtain an inverse function from an initial function, it is necessary to have a one-to-one correspondence between the elements of the sets $D$ and $E$. That is why the functions $y = \sin x$ and $y = \cos x$ were defined not on their natural domains but over such intervals where these functions are either increasing or decreasing. In other words, the initial functions in cases (b) and (c) in \fig{fig-18} were defined as strictly monotonic. A strict monotonicity is a \emph{sufficient
+condition} for the above-mentioned one-to-one correspondence between the elements of $D$ and $E$. No doubt you can prove without my help the following
+theorem.
+\begin{mytheo}{Theorem}
+If a function $y = f(x)$ is strictly monotonic, different $x$ are mapped onto different $y$.
+\end{mytheo}
+\rdr Thus, a sufficient condition for the existence of the inverse function- is the strict monotonicity of the initial function. Is this right?
+
+\athr Yes, it is.
+
+\rdr But isn't the strict monotonicity of the initial function also a \emph{necessary condition} for the existence of the inverse function?
+
+\athr No, it is not. A one-to-one correspondence may also take place in the case of a non-monotonic function. For example,
+\begin{equation*}%
+y = 
+\begin{cases}
+1 - x & 0 < x < 1 \\
+x & 1 \leqslant x \leqslant 2
+\end{cases}
+\end{equation*}
+Have a look at the graph of this function shown in \fig{fig-19}. If a function is strictly monotonic, it has the inverse function. However, the converse is not true. 
+
+\begin{figure}[!ht]%[13]{r}{0.5\textwidth}
+\centering
+\includegraphics[width=0.48\textwidth]{figures/fig-19.pdf}
+\caption{A non-monotonic function.}
+\label{fig-19}
+\end{figure}
+
+\rdr As I understand it, in order to obtain an inverse function (when it exists), one should simply reverse the roles of $x$ and $y$ in the equation $y = f (x)$ defining the initial function. The inverse function will then be 'given by the equation $x = F (y)$. As a result the range of the initial function becomes the domain of the inverse function.
+
+\athr That is correct. In practice a conversion of the initial function to the inverse function can be easily performed on a graph. The graph of the inverse function is
+always \emph{symmetric} to the graph of the initial function about a straight line $y = x$. It is illustrated in \fig{fig-20}, which shows several pairs of graphs of the initial and inverse functions. A list of some pairs of functions with their domains is given below:
+
+
+\begin{center}
+\begin{tcolorbox}[colback=white,colframe=DodgerBlue]
+\centering
+%\boxed{
+$\begin{array}{l>{\color{IndianRed}}cc>{\color{IndianRed}}cc}
+\arrayrulecolor{DodgerBlue}
+%\hline
+ & \textbf{Initial} & \textbf{Domain} & \textbf{Inverse} & \textbf{Domain} \\
+ \midrule
+(a) & x^{3}& -\infty < x < \infty &\sqrt[3]{x} & -\infty < x < \infty\\
+(b) & x^{2} & 0 \leqslant x < \infty & \sqrt{x} & 0 \leqslant x < \infty\\
+(c) & 10^{x} & -\infty < x < \infty & \log x &  0 < x < \infty\\
+(d) & \sin x & -\dfrac{\pi}{2}  \leqslant x  \leqslant \dfrac{\pi}{2} & \arcsin x & -1 \leqslant x \leqslant 1\\
+(e) & \cos x & 0 \leqslant x \leqslant \pi & \arccos x & -1 \leqslant x \leqslant 1\\
+(f) & \tan x & -\dfrac{\pi}{2}  < x  < \dfrac{\pi}{2}& \arctan x & -\infty < x < \infty \\
+(g) & \cot x & 0 < x < \infty & \text{arccot}\, x &  -\infty < x < \infty\\[5pt]
+%\midline
+\end{array}$
+%}
+\end{tcolorbox}
+\end{center}
+
+
+
+All the domains of the inverse functions shown in the list case of are the natural domains of the functions (however, in the case of $y=\sqrt[3]{x}$ the natural domain is sometimes assumed to be restricted to the interval $[0, \infty[$ instead of the whole real line). As to the initial functions, only two of them ($y = x^{3}$ and $y = 10^{x}$) are considered in this case as defined on their natural domains. The remaining functions are defined over shorter intervals to ensure the strict monotonicity of the functions.
+
+Now we shall discuss the concept of a \emph{composite function}.
+
+Let us take as an example the function $h (x) =\sqrt{1 + \cos^{2} x}$. Consider also the functions $f (x) = \cos x$ and $g (y) = \sqrt{1+y^{2}}$.
+
+\rdr This $f(x)$ notation is something new. So far we used to write $y = f (x)$,
+
+\begin{figure}[!ht]%[13]{r}{0.5\textwidth}
+\centering
+\includegraphics[width=0.85\textwidth]{figures/fig-20.pdf}
+\caption{Functions and their inverses showing symmetry along the line $y=x$.}
+\label{fig-20}
+\end{figure}
+
+\athr You are right. However, it is expedient to simplify the notation.
+
+Consider the three functions: $h (x), \, f (x)$, and $g (y)$. The function $h (x)$ is a composite function composed of $f(x)$ and $g(y)$:
+\begin{equation*}%
+h (x) = g [f (x)] 
+\end{equation*}
+\rdr I understand. Here, the values of $f (x)$ are used as the values of the independent variable (argument) for $g (x)$.
+
+\begin{figure}[!ht]%[13]{r}{0.5\textwidth}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/fig-21.pdf}
+\caption{Understanding the composite function.}
+\label{fig-21}
+\end{figure}
+
+\athr Let us have a look at \fig{fig-21}, which pictures the mappings of sets in the case of our composite function, $h (x) =\sqrt{1 + \cos^{2} x}$, with $f(x) = \cos x$ defined over the interval $[0, \pi]$.
+
+We see that the function $f$ is a mapping of $D$ (the interval $[0, \pi]$) onto $G$ (the interval $[-1, 1]$), that is, the mapping $f$. The function $g$ (the function $\sqrt{1 + y^{2}}$) is a mapping of $G$ onto $E$ (the interval $[1, \sqrt{2}]$), that is, the mapping $g$. Finally, the function $h$ (the function $\sqrt{1 + \cos^{2} x}$ defined over the interval $[0, \pi]$) is a mapping of $D$ onto $E$, that is, the mapping $h$.
+
+The mapping $h$ is a result of the consecutive mappings $f$ and $g$, and is said to be the composition of mappings; the following notation is used
+\begin{equation*}%
+h = g \circ f
+\end{equation*}
+(the right-hand side of the equation should be read from right to left: the mapping $f$ is used first and then the mapping $g$).
+
+\rdr Obviously, for a composite function one can also draw a diagram shown in \fig{fig-22}.
+
+\begin{figure}[!ht]%[13]{r}{0.5\textwidth}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/fig-22.pdf}
+\caption{Understanding the composite function.}
+\label{fig-22}
+\end{figure}
+
+
+\athr I have no objections. Although I feel that. we better proceed from the concept of a mapping of one set onto another, as in \fig{fig-21}.
+
+\rdr Probably, certain ``difficulties'' may arise because the range of $f$ is at the. same time the domain of $g$? 
+
+\athr In any case, this observation must always be kept in mind. One should not forget that the natural domain of a composite function $g [f (x)]$ is a portion (subset) of the natural domain of $f(x)$ for which the values of $f$ belong to the natural domain of $g$. This aspect was unimportant
+in the example concerning $g [f (x)] = \sqrt{ 1 + \cos^{2} x}$ because all the values of $f$ (even if $\cos x$ is defined on the whole real line) fall into the natural domain of $g (y) = \sqrt{1 +y^{2}}$. I can give you, however, a different example:
+\begin{equation*}%
+h(x) = \sqrt{\sqrt{x-1} -2}, \quad f (x) = \sqrt{x-1}, \quad  g(y)=\sqrt{y -2}
+\end{equation*}
+The natural domain of $f (x)$ is $[1, \infty[$ Not any point in this interval, however, belongs to the domain of the composite function $h (x)$, Since the expression $\sqrt{y - 2}$ is meaningful only if $y \geqslant 2$, and for $y = 2$ we have $x = 5$, the natural domain of this composite function is represented by $[5, \infty]$, i.e. a subset smaller than the natural domain of $f (x)$.
+
+Let us examine one more example of a composite function. Consider the function $y = \sin \,(\arcsin x)$, You know that $\arcsin x$ can be regarded as an angle the sine of which is equal to $x$. In other words, $\sin(\arcsin x) = x$, Can you point out the difference between the composite function $y = \sin \, (\arcsin x) $ and the function $y = x$?
+
+\rdr Yes, I can. The natural domain of the function $y = x$ is represented by the whole real line. As to the composite function $y = \sin (\arcsin x)$, its natural domain coincides with the natural domain of the function $\arcsin x
+$, i.e. with $[-1, 1]$. The graph of the function $y = \sin (\arcsin x)$ is shown in \fig{fig-23}.
+\begin{figure}[!ht]%[13]{r}{0.5\textwidth}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/fig-23.pdf}
+\caption{The graph of the function $y = \sin (\arcsin x)$.}
+\label{fig-23}
+\end{figure}
+
+\athr Very good. In conclusion, let us get back to the problem of the graphical definition of a function. Note that there are functions whose graphs cannot be plotted in principle, the whole curve or a part of it. For example, it is impossible to plot the graph of the function $y= \sin \dfrac{1}{x}$ in the vicinity of $x = 0$ (\fig{fig-24}). It is also impossible to have the graph of the Dirichlet	function mentioned above.
+\begin{figure}[!ht]%[13]{r}{0.5\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/fig-24.pdf}
+\caption{The graph of the function $y = \sin \dfrac{1}{x}$.}
+\label{fig-24}
+\end{figure}
+
+\rdr It seemed to me that the Dirichlet function had no graph at all. 
+
+\athr No, this is not the case. Apparently, your idea of a graph of a function is always a curve.
+
+\rdr But all the graphs that we have analyzed so far were curves, and rather smooth curves, at that.
+
+\athr In the general case, such an image is not obligatory. But it should be stressed that \emph{every function has its graph, this graph being unique}.
+
+\rdr Does this statement hold for functions that are not numerical
+
+\athr Yes, it does. In the most general case we can give the following definition.
+\begin{mytheo}{Definition}
+The graph of a function $f$ defined on a set $D$ with a range on a set $E$ is a set of all pairs $(x, y)$ such that the first element of the pair $x$ belongs to $D$, while the second element of the pair $y$ belongs to $E$, $y$ being a function of $x \,\, (y= f(x))$.
+\end{mytheo}
+
+\rdr So it turns out that the graph of a function such as the area of a circle is actually a set of pairs each consisting of a circle (an element $x$) and a positive number (an element $y$) representing the area of a given circle.
+
+\athr Precisely so. Similarly, the graph of a function representing a schedule of students on duty in a classroom is a set of pairs each containing a date (an element $x$) and the name of a student (an element $y$) who is on duty on this date. Note also that in practice this function indeed takes a graphic form.
+
+If in a particular case both elements of the pair (both $x$ and $y$) are numbers, we arrive at the graph of the function represented by a set of points on the coordinate plane. This is the familiar graph of a numerical function.
+}

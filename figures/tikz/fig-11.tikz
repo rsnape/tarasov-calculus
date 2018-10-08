@@ -1,0 +1,17 @@
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,rounded corners,x=1cm,y=1cm]
+%\clip(-8,-3) rectangle (7,4);
+  \draw (-3,2) [color=IndianRed]rectangle (-1,0) node[pos=.5,align=center,] {$\dfrac{4x^{2}-1}{|x|+ 1} $};
+  \draw (-1.5,1.5) [color=black]rectangle (2,4) node[pos=.5,align=center] {\Large$\dfrac{4 \Box^{2}-1}{|\Box|+ 1} $};
+  \draw (3.5,1.75) [color=IndianRed] rectangle (6.5,3.75) node[pos=.5,align=center] { $\dfrac{4(x-1)^{2}-1}{|x-1|+ 1} $};
+  \draw (1,4.25) [color=DodgerBlue]rectangle (3,5) node[pos=.5,align=center]{ $|x-1| $};
+  \draw (1,.5) [color=DodgerBlue]rectangle (3,1.25) node[pos=.5,align=center] { $|x-1| $};
+\draw (1.1,4.65) node[color=black](onea) {};
+\draw (1.1,.85) node[color=black](twoa) {};  
+\draw (-0.2,3.2) node[color=black](one) {};
+\draw (-.2,2.35) node[color=black] (two) {};
+\draw (3.65,2.75) node[color=black](three) {};
+\draw (1.9,2.75) node[color=black] (threea) {};
+\path (one) edge[{latex}-,line width=2.5pt,in=180,out=90,color=DodgerBlue] (onea);
+\path (twoa) edge[-{latex},line width=2.5pt,in=270,out=180,color=DodgerBlue] (two);
+\path (three) edge[{latex}-,line width=3.5pt,in=0,out=180,color=DodgerBlue] (threea);
+\end{tikzpicture}

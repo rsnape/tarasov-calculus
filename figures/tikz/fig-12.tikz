@@ -1,0 +1,41 @@
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,rounded corners,x=1cm,y=1cm,scale=1]
+%  \draw[step=.5cm,gray,very thin] (-5,-5) grid (5,5);
+
+\clip(-7.1,-.1) rectangle (5.1,5.1);
+\draw (-4,4) [color=IndianRed]rectangle (-2,5) node[pos=.5,align=center]{\small number};
+\draw (-.5,4) [color=IndianRed]rectangle (1.5,5) node[pos=.5,align=center]{\small {numerical} \\[-5pt] \small{ function}};
+\draw (3,4) [color=IndianRed]rectangle (5,5) node[pos=.5,align=center]{\small {numerical} \\[-5pt] \small{ function}};
+
+  \draw (-5.5,2) [color=IndianRed]rectangle (-3.5,3) node[pos=.5,align=center] {\small {numerical} \\[-5pt] \small{ function}};    
+  \draw (-2,2) [color=IndianRed]rectangle (0,3) node[pos=.5,align=center] {\small operator};  
+  \draw (1.5,2) [color=IndianRed]rectangle (3.5,3) node[pos=.5,align=center] {\small functional};
+
+        \draw (-7,0) [color=IndianRed]rectangle (-5,1) node[pos=.5,align=center] {\small  number};    
+    \draw (-3.5,0) [color=IndianRed]rectangle (-1.5,1) node[pos=.5,align=center] {\small {numerical} \\[-5pt] \small{ function}};
+ \draw (0,0) [color=IndianRed]rectangle (2,1) node[pos=.5,align=center] {\small number};
+
+\draw (4,4.1) node[color=black](1a) {};
+\draw (2.5,2.8) node[color=black](1b) {};
+\draw (2.5,2.1) node[color=black](1c) {};
+\draw (1,.8) node[color=black](1d) {};
+
+\draw (0.5,4.1) node[color=black](2a) {};
+\draw (-1,2.8) node[color=black](2b) {};
+\draw (-1,2.1) node[color=black](2c) {};
+\draw (-2.5,.8) node[color=black](2d) {};
+
+\draw (-3,4.1) node[color=black](3a) {};
+\draw (-4.5,2.8) node[color=black](3b) {};
+\draw (-4.5,2.1) node[color=black](3c) {};
+\draw (-6,.8) node[color=black](3d) {};
+
+\path (1a) edge[-{latex},line width=1.5pt,in=90,out=270,color=DodgerBlue] (1b);
+\path (1c) edge[-{latex},line width=1.5pt,in=90,out=270,color=DodgerBlue] (1d);
+
+\path (2a) edge[-{latex},line width=1.5pt,in=90,out=270,color=DodgerBlue] (2b);
+\path (2c) edge[-{latex},line width=1.5pt,in=90,out=270,color=DodgerBlue] (2d);
+
+\path (3a) edge[-{latex},line width=1.5pt,in=90,out=270,color=DodgerBlue] (3b);
+\path (3c) edge[-{latex},line width=1.5pt,in=90,out=270,color=DodgerBlue] (3d);
+
+\end{tikzpicture}

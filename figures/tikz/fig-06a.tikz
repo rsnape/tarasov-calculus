@@ -1,0 +1,56 @@
+\begin{tikzpicture}[baseline=1cm,line cap=round,line join=round,>=triangle 45,x=2.5cm,y=2.0cm]
+\foreach \x in {0,1,2,3,4}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\clip(-0.3,-0.3) rectangle (5.,0.52);
+\draw (4.212511655558804,0.008475512540077454) node[anchor=north west] {$y$};
+\draw [->,line width=1.2pt,color=DarkGray] (0.,0.) -- (4.6,0.);
+\draw (1.9,0.35) node[anchor=north west] {$y_{4}$};
+\draw (2.88,0.35) node[anchor=north west] {$y_{9}$};
+\draw (1.6,0.35) node[anchor=north west] {$y_{3}$};
+\draw (1.3171801125876044,0.35) node[anchor=north west] {$y_{2}$};
+\draw (0.9,0.35) node[anchor=north west] {$y_{1}$};
+\draw (-0.1,0.5) node[anchor=north west,color=IndianRed] {\textit{Sequence} (4)};
+\begin{scriptsize}
+\filldraw [DodgerBlue] (11.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (1.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (2.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (3.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (4.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (0.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (1.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (1.41,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (1.73,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (2.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (2.24,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (2.45,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (2.65,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (2.83,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (3.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (3.16,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (3.32,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (3.46,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (3.61,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (3.74,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (3.87,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (4.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (4.12,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (1.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (1.41,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (1.73,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (2.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (2.24,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (2.45,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (2.65,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (2.83,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (3.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (3.16,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (3.32,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (3.46,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (3.61,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (3.74,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (3.87,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (4.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (4.12,0.) circle (2.5pt);
+\end{scriptsize}
+\end{tikzpicture}
+

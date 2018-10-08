@@ -1,0 +1,26 @@
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.5cm,y=1cm]
+\clip(-0.4438323209301456,-3.0998236589044925) rectangle (8.408177392474567,2.059011510137111);
+\fill[line width=0.8pt,color=DodgerBlue,fill=DodgerBlue,pattern=north east lines,pattern color=DodgerBlue] (1.,0.) -- (1.,-0.5) -- (3.,-0.5) -- (3.,0.) -- cycle;
+\fill[line width=0.8pt,color=DodgerBlue,fill=DodgerBlue,pattern=north east lines,pattern color=DodgerBlue] (4.,0.) -- (4.,-0.5) -- (6.,-0.5) -- (6.,0.) -- cycle;
+\clip(0,-2.5) rectangle (8.2,1);
+\draw [->,line width=1.2pt,color=DarkGray] (0.,0.) -- (7.5,0.);
+\draw [line width=0.75pt,color=DarkGray] (1.,0.5)-- (1.,-1.5);
+\draw [line width=0.75pt,color=DarkGray] (3.,0.5)-- (3.,-1.5);
+\draw [line width=0.75pt,color=DarkGray] (4.,0.5)-- (4.,-1.5);
+\draw [line width=0.75pt,color=DarkGray] (6.,0.5)-- (6.,-1.5);
+\draw [<->,line width=0.75pt,color=DarkGray] (1.,-1.)-- (3.,-1.);
+\draw [<->,line width=0.75pt,color=DarkGray] (4.,-1.)-- (6.,-1.);
+\draw (1.8417275640882842,0.45549171779084613) node[anchor=north west] {\footnotesize$a_{1}$};
+\draw (4.838350524445781,0.4700032091242965) node[anchor=north west] {\footnotesize $a_{2}$};
+\draw (1.8489833097550095,-0.55) node[anchor=north west] {\footnotesize $2 \varepsilon$};
+\draw (4.867373507112682,-0.55) node[anchor=north west] {\footnotesize $2 \varepsilon$};
+\draw (6.5,-0.10320069854699282) node[anchor=north west] {\footnotesize $y$};
+\draw (1.85,-1.95) node[anchor=north west]{\footnotesize 1} ;
+\draw (4.88,-1.95) node[anchor=north west] {\footnotesize 2};
+\draw (1.1,-.5) node[color=black] (one) {};
+\draw (2.9,-.5) node[color=black] (two) {};
+\draw (4.1,-.5) node[color=black] (three) {};
+\draw (5.9,-.5) node[color=black] (four) {};
+\draw [decoration={brace,amplitude=8pt},decorate,rotate=-90,color=DarkGray] ($(two)+(3em,1ex)$) -- ($(one)+(3em,-1ex)$);
+\draw [decoration={brace,amplitude=8pt},decorate,rotate=-90,color=DarkGray] ($(four)+(3em,1ex)$) -- ($(three)+(3em,-1ex)$);
+\end{tikzpicture}

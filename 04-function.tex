@@ -1,0 +1,304 @@
+% !TEX root = calculus.tex
+
+\chapter{FUNCTION}
+\label{function}
+{\parindent=0pt
+
+\rdr Functions are widely used in elementary mathematics.
+
+\athr Yes, of course. You are familiar with \emph{numerical functions}. Moreover, you have worked already with different numerical functions. Nevertheless, it will be worthwhile to dwell on the concept of the function. To begin with, what is your idea of a function?
+
+\rdr As I understand it, a function is a certain correspondence between \emph{two variables}, for example, between $x$ and $y$. Or rather, it is a dependence of a variable $y$ on a variable $x$.
+
+\athr What do you mean by a ``variable''?
+
+\rdr It is a quantity which may assume different values.
+
+\athr Can you explain what your understanding of the expression ``a quantity assumes a value'' is? What does it mean? And what are the reasons, in particular, that make a quantity to assume this or that value? Don't you feel that the very concept of a variable quantity (if you are going to use this concept) needs a definition?
+
+\rdr O.K., what if I say: a function $y = f (x)$ symbolizes a dependence of $y$ on $x$, where $x$ and $y$ are numbers.
+
+\athr I see that you decided to avoid referring to the concept of a \emph{variable quantity}. Assume that $x$ is a number and $y$ is also a number. But then explain, please, the meaning of the phrase ``a dependence between two numbers''.
+
+\rdr But look, the words ``an independent variable'' and ``a dependent variable'' can be found in any textbook on mathematics.
+
+\athr The concept of a variable is given in textbooks on mathematics after the definition of a function has been introduced.
+
+\rdr It seems I have lost my way.
+
+\athr Actually it is not all that difficult ``to construct'' an image of a numerical function. I mean \emph{image}, not \emph{mathematical definition} which we shall discuss later.
+
+In fact, a numerical function may be pictured as a ``black box'' that \emph{generates a number at the output in response to a number at the input}. You put into this ``black box'' a number (shown by $x$ in \hyperref[fig-10]{Figure \ref{fig-10}}) and the "black box" outputs a new number ($y$ in \hyperref[fig-10]{Figure \ref{fig-10}}).
+\begin{figure}[!h]
+\centering
+\input{figures/tikz/fig-10.tikz}
+%\includegraphics[width=0.55\textwidth]{figures/fig-10.pdf}
+\caption{A numerical function as a black box.}
+\label{fig-10}
+\end{figure}
+Consider, for example, the following function: 
+\begin{equation*}%
+y = 4x^{2} - 1
+\end{equation*}
+If the input is $x= 2$, the output is $y=15$; if the input is $x=3$, the output is $y= 35$; if the input is $x=10$, the output is $y = 399$, etc.
+
+\rdr What does this ``black box'' look like? You have stressed that \hyperref[fig-10]{Figure \ref{fig-10}} is only symbolic.
+
+\athr In this particular case it makes no difference. It does not influence the essence of the concept of a function. But a function can also be ``pictured'' like this:
+\begin{equation*}%
+4 \Box^{2} - 1
+\end{equation*}
+The square in this picture is a ``window'' where you input the numbers. Note that there may be more than one ``window''. For example,
+\begin{equation*}%
+\frac{4 \Box^{2} - 1}{|\Box| + 1}
+\end{equation*}
+
+\rdr Obviously, the function you have in mind is 
+\begin{equation*}%
+\frac{4 x^{2} - 1}{|x| + 1}
+\end{equation*}
+
+\athr Sure. In this case each specific value should be input into both ``windows'' simultaneously. ``Black box'' working as a function
+ \hyperref[fig-10]{Figure \ref{fig-10}}.
+
+By the way, it is always important to see such a ``window'' (or ``windows'') in a formula describing the function. Assume, for example, that one needs to pass from a function $y = f (x)$ to a function $y = f(x - 1)$ (on a graph of a function this transition corresponds to a displacement of the curve in the positive direction of the $x$-axis by 1). If you clearly understand the role of such a ``window'' (``windows''), you will simply replace in this ``window'' (these ``windows'') $x$ by $x - 1$. Such an operation is Illustrated by \hyperref[fig-11]{Figure \ref{fig-11}} which represents the following function
+\begin{equation*}%
+y = \frac{4 x^{2} - 1}{|x| + 1}
+\end{equation*}
+\begin{figure}[!h]
+\centering
+\input{figures/tikz/fig-11.tikz}
+%\includegraphics[width=0.9\textwidth]{figures/fig-11.pdf}
+\caption{Change in a function from $f(x) \to f(x-1)$.}
+\label{fig-11}
+\end{figure}
+Obviously, as a result of substitution of $x - 1$ for $x$ we arrive at a new function (new ``black box'') 
+\begin{equation*}%
+\frac{4 (\Box - 1)^{2} - 1}{|\Box -1 | + 1}, \quad y = \frac{4 (x - 1)^{2} - 1}{|x -1 | + 1}
+\end{equation*}
+
+\rdr I see. If, for example, we wanted to pass from $y = f (x)$ to $y = f \left( \frac{1}{x} \right)$, the function pictured in \fig{fig-11} would be transformed as follows:
+\begin{equation*}%
+y = \frac{\dfrac{4}{x^{2}} -1 }{\dfrac{1}{|x |} + 1}
+\end{equation*}
+
+\athr Correct. Now. try to find $y = f (x)$ if
+\begin{equation*}%
+2 f	\left( \dfrac{1}{x } \right) - f(x) = 3x
+\end{equation*}
+
+\rdr I am at a loss. 
+
+\athr As a hint, I suggest replacing $x$ by $\dfrac{1}{x } $.
+
+\rdr This yields
+\begin{equation*}%
+2 f (x)	- f \left( \dfrac{1}{x } \right) = \frac{3}{x}
+\end{equation*}
+Now it is clear. Together with the initial equation, the new equation forms a system of two equations for $f (x)$ and $f \left( \dfrac{1}{x } \right) $:
+\begin{equation*}
+\left.
+\begin{split}
+2f \left( \dfrac{1}{x } \right) - f(x) & = 3x \\
+2 f(x) - f \left( \dfrac{1}{x } \right)  & = \frac{3}{x}
+\end{split}
+\right\}
+\end{equation*}
+
+By multiplying all the terms of the second equation by 2 and then adding them to the first equation, we obtain
+\begin{equation*}%
+ f (x) = x + \frac{2}{x}
+\end{equation*}
+
+
+\athr Perfectly true.
+
+\rdr In connection with your comment about the numerical function as a ``black box'' generating a numerical output in response to a numerical input, I would like to ask whether other types of ``black boxes'' are possible in calculus. 
+
+\begin{figure}[!h]
+\centering
+\input{figures/tikz/fig-12.tikz}
+%\includegraphics[width=\textwidth]{figures/fig-12.pdf}
+\caption{Understanding place and role of the numerical function as a mathematical tool.}
+\label{fig-12}
+\end{figure}
+
+\athr Yes, they are. In addition to the numerical function, we shall discuss the concepts of an operator and a functional. 
+
+\rdr I must confess I have never heard of such concepts. 
+
+\athr I can imagine. I think, however, that \fig{fig-12} will be helpful. Besides, it will elucidate the place and role of the numerical function as a mathematical tool. \fig{fig-12} shows that:
+\begin{enumerate}[label=$\textcolor{IndianRed}{\blacktriangleright}$]
+
+\item \emph{a numerical function is a \emph{``black box''} that generates a number at the output in response to a number at the input;}
+
+\item \emph{an operator	is	a \emph{``black box''} that	generates	a	numerical function at the output in response to a numerical function at the input}; it is said that all operator applied to a function generates a new function;
+
+\item \emph{a functional is a \emph{``black box''} that generates a number at the output in response to a numerical junction at the input}, i.e. a concrete number is obtained ``in response'' to a concrete function.
+\end{enumerate}
+
+\rdr Could you give examples of operators and functionals?
+
+\athr Wait a minute. In the next dialogues we shall analyze both the concepts of an operator and a functional. So far, we shall confine ourselves to a general analysis of both concepts. Now we get back to our main object, the numerical function.
+
+The question is: How to construct a ``black box'' that generates a numerical function.
+
+\rdr Well, obviously, we should find a relationship, or a law, according to which the number at the ``output'' of the ``black box'' could be forecast for each specific number introduced at the ``input''.
+
+\athr You have put it quite clearly. Note that such a law could be naturally referred to as the \emph{law of numerical correspondence}. However, the law of numerical correspondence would not be a sufficient definition of a numerical function.
+
+\rdr What else do we need?
+
+\athr Do you think that any number could be fed into a specific ``black box'' (function)?
+
+\rdr I see. I have to define a set of numbers acceptable as inputs of the given function.
+
+\athr That's right. This set is said to be the \emph{domain of a function}.
+
+Thus, the definition of a numerical function is based on two ``cornerstones'';
+
+the domain of a function (a certain set of numbers), and the law of numerical correspondence. 
+
+According to this law, \emph{every number from the domain of
+a function is placed in correspondence with a certain number, which is called the value of the function; the values form the range of the function.}
+
+\rdr Thus, we actually have to deal with two numerical sets. On the one hand, we have a set called the domain of a function and, on  the other, we have a set called the range of a function.
+
+\athr At this juncture we have come closest to a mathematical definition of a function which will enable us to avoid the somewhat mysterious word ``black box''.
+
+Look at \fig{fig-13}. It shows the function $y = \sqrt{1 - x^{2}}$.  \fig{fig-13} pictures two numerical sets, namely, $D$ (represented by the interval $[-1, 1]$) and	 $E$ (the interval $[0, 1]$). For your convenience these sets are shown on two different real lines.
+
+\begin{figure}[!h]
+\centering
+\input{figures/tikz/fig-13.tikz}
+%\includegraphics[width=0.55\textwidth]{figures/fig-13.pdf}
+\caption{Range and domain of a function.}
+\label{fig-13}
+\end{figure}
+
+The set $D$ is the domain of the function, and $E$ is its range. Each number in $D$ corresponds to one number in $E$ (every input value is placed in correspondence with one output value). This correspondence is shown in \fig{fig-13} by arrows pointing from $D$ to $E$.
+
+
+\rdr But \fig{fig-13} shows that two \emph{different} numbers in $D$ correspond to one number in $E$.
+
+\athr It does not contradict the statement ``each number in $D$ corresponds to one number in $E$.'' I never said that \emph{different} numbers in $D$ must correspond to different numbers in $E$. Your remark (which actually stems from specific characteristics of the chosen function) is of no principal significance. Several numbers in $D$ may correspond to one number in $E$. An inverse situation, however, is forbidden. It is not allowed for one number in $D$ to correspond to more than one number in $E$. I emphasize that each number in $D$ must correspond to \emph{only one} (not more!) number in $E$.
+
+Now we can formulate a mathematical definition of the numerical function.
+
+\begin{mytheo}{Definition}
+Take two numerical sets $D$ and $E$ in which each element $x$ of $D$ (this is denoted by $x \in D$) is placed in one-to-one correspondence with one element $y$ of $E$. Then we say that a function $y = f (x)$ is set in the domain $D$, the range of the function being $E$. It is said that the argument $x$ of the function $y$ passes through $D$ and the values of $y$ belong to $E$.
+\end{mytheo}
+
+Sometimes it is mentioned (but more often omitted altogether) that both $D$ and $E$ are subsets of the set of real numbers $R$ (by definition, $R$ is the real line).
+
+On the other hand, the definition of the function can be reformulated using the term ``mapping''. Let us return again to \fig{fig-13}. Assume that the number of arrows from the points of $D$ to the points of $E$ is infinite (just imagine that such arrows have been drawn from each point of $D$). Would you agree that such a picture brings about an idea that $D$ is \emph{mapped} onto $E$?
+
+\rdr Really, it looks like mapping.
+
+\athr Indeed, this \emph{mapping} can be used to define the \emph{function}.
+\begin{mytheo}{Definition}
+A numerical function is a mapping of a numerical set $D$ (which is the domain of the function) onto another numerical set $E$ (the range of this function).
+\end{mytheo}
+Thus, the numerical function is a \emph{mapping of one numerical set onto another numerical set.} The term ``mapping'' should be understood as a kind of numerical correspondence discussed above. In the notation $y = f (x)$, symbol $f$ means the function itself (i.e. the mapping), with $x \in D$ and $y \in E$.
+
+\rdr If the \emph{numerical function} is a mapping of one numerical set onto another numerical set, then the operator can be considered as a mapping of a set of numerical function onto another set of functions, and the \emph{functional} as a mapping of a set of functions onto a numerical set.
+
+\athr You are quite right.
+
+\rdr I have noticed that you persistently use the term ``numerical function'' (and I follow suit), but usually one simply says ``function''. Just how necessary is the word ``numerical''?
+
+\athr You have touched upon a very important aspect. The point is that in modern mathematics the concept of a function is substantially broader than the concept of a numerical function. As a matter of fact, the concept of a function includes, as particular cases, a numerical function as well as an operator and a functional, because the essence in all the three is a mapping of one set onto another independently of the nature of the sets. You have noticed that both operators and functionals are mappings of certain sets onto certain sets. In a particular case of mapping of a numerical set onto a numerical set we come to a \emph{numerical} function. In a more general case, however, sets to be mapped can be \emph{arbitrary}. Consider a few examples.
+
+\textcolor{IndianRed}{\textbf{Example 1}} Let $D$ be a set of working days in an academic year, and $E$ a set of students in a class. Using these sets, we can define a function realizing a schedule for the students on duty in the classroom. In compiling the schedule, each element of $D$ (every working day in the year) is placed in one-to-one correspondence with a certain element of $E$ (a certain student). This function is a \emph{mapping of the set of working days onto the set of students}. We may add that the domain of the function consists of the working days and the range is defined by the set of the students.
+
+\rdr It sounds a bit strange. Moreover, these sets have finite numbers of elements.
+
+\athr This last feature is not principal.
+
+\rdr The phrase ``the values assumed on the set of students'' sounds somewhat awkward.
+
+\athr Because you are used to interpret ``value'' as ``numerical value''.
+Let us consider some other examples.
+
+\textcolor{IndianRed}{\textbf{Example 2}} Let $D$ be a set of all triangles, and $E$ a set of positive real numbers. Using these sets, we can define two functions, namely, the area of a triangle and the perimeter of a triangle. Both functions are mappings (certainly, of different nature) \emph{of the set of the triangles onto the set of the positive real numbers}. It is said that the set of all the triangles is the domain of these functions and the set of the positive real numbers is the range of these functions.
+
+\textcolor{IndianRed}{\textbf{Example 3}} Let $D$ be a set of all triangles, and $E$ a set of all circles. The mapping of $D$ onto $E$ can be either a circle inscribed in a triangle, or a circle circumscribed around a triangle. Both have the set of all the triangles as the domain of the function and the set of all the circles as the range of the function.
+
+By the way, do you think that it is possible to ``construct'' an \emph{inverse} function in a similar way, namely, to define a function with all the circles as its domain and all the triangles as its range?
+
+\rdr I see no objections.
+
+\athr No, it is impossible. Because any number of different triangles can be inscribed in or circumscribed around a circle. In other words, each element of $E$ (each circle) corresponds to an Infinite number of different elements of $D$ (i.e, an infinite number of triangles). It means that there is no function since no mapping can be realized.
+
+However, the situation can be improved if we restrict the set of triangles.
+
+\rdr I guess I know how to do it. We must choose the set of all the \emph{equilateral} triangles as the set $D$. Then it becomes possible to realize both a mapping of $D$ onto $E$ (onto the set of all the circles) and an inverse mapping, i.e. the mapping of $E$ onto $D$, since only one equilateral triangle could be inscribed in or circumscribed around a given circle.
+
+\athr Very good. I see that, you have grasped the essence of the concept of functional relationship. I should emphasize that from the broadest point of view this concept is based on the idea of mapping one set of objects onto another set of objects. \emph{It means that a function can be realized as a numerical function, an operator, or a functional}. As we have established above, a \emph{function may be represented by an area or perimeter of a geometrical figure, such, as a circle inscribed in a triangle or circumscribed around it, or it may take the form of a schedule of students on duty in a classroom, etc}. It is obvious that a list of different functions may be unlimited.
+
+\rdr I must admit that such a broad interpretation of the concept of a function is very new to me.
+
+\athr As a matter of fact, in a very diverse set of possible functions (mappings), we shall use only \emph{numerical functions, operators}, and \emph{functionals}. Consequently, we shall refer to numerical functions as simply \emph{functions}, while \emph{operators} and \emph{functionals} will be pointed out specifically.
+
+And now we shall examine the already familiar concept of a numerical sequence as an example of mapping.
+
+\rdr A numerical sequence is, apparently, a mapping of a set of natural numbers onto a different numerical set. The elements of the second set are the terms of the sequence. Hence, a numerical sequence is a particular case of a numerical function. The domain of a function is represented by a set of natural numbers.
+
+\athr This is correct. But you should bear in mind that later on we shall deal with numerical functions whose domain is represented by the \emph{real line}, or by its \emph{interval} (or \emph{intervals}), and whenever we mention a function, we shall imply a numerical function.
+
+In this connection it is worthwhile to remind you of the classification of intervals. In the previous dialogue we have already used this classification, if only partially.
+
+First of all we should distinguish between the intervals of finite length:
+\begin{enumerate}[label=$\textcolor{IndianRed}{\blacktriangleright}$]
+
+\item a \emph{closed interval} that begins at $a$ and ends at $b$ is denoted by $[a, b]$; the numbers $x$ composing this interval meet the inequalities $a \leqslant x \leqslant b$;
+
+\item an \emph{open interval} that begins at $a$ and ends at $b$ is denoted by $]\, a, b[$; the numbers $x$ composing this interval meet the inequalities	$a < x < b$;
+
+\item a \emph{half-open interval} is denoted either by $] \, a, b]$ or $[a, b[$, the former implies that $ a < x \leqslant b$, and the latter that $a \leqslant x < b$.
+\end{enumerate}
+
+The intervals may also be \emph{infinite}:
+\begin{center}
+\begin{tabular}{llc}
+$]\, - \infty, \, \infty \, [$ &	$( -	\infty < x < \infty)$ &	the real line \\
+$] \, a, \, \infty  \, ]$ & $(a < x < \infty)$ & \\
+$[\, a, \, \infty \, [$ &  $(a  \leqslant x < \infty)$ & \\
+$] \, - \infty, b \, [$ & $(- \infty < x < b)$ & \\
+$ ]- \infty, \, b]$  & $(-  \infty < x \leqslant b)$ & \\
+\end{tabular}
+\end{center}
+
+Let us consider several specific examples of numerical functions. Judging by the appearance of the formulas given below, point out the intervals constituting the domains of the following functions:
+\begin{align}%
+y & = \sqrt{ 1 - x^{2}}	\label{fn-ex-01}\\
+%eq(1) 
+y & = \sqrt{ x - 1}		\label{fn-ex-02}\\
+%eq(2) 
+y & = \sqrt{2 - x} 	\label{fn-ex-03}\\
+%eq(3)
+y & = \dfrac{1}{\sqrt{x-1}}	\label{fn-ex-04}\\	
+%eq(4)
+y & = \dfrac{1}{\sqrt{2-x}}		\label{fn-ex-05}\\
+%eq(5) 
+y & = 	\sqrt{x-1} + \sqrt{2-x}\label{fn-ex-06}\\
+%eq(6) 
+y & = \dfrac{1}{\sqrt{x-1}}	+ \dfrac{1}{\sqrt{2 -x }}		\label{fn-ex-07}\\
+%eq(7)
+y & =	\sqrt{2 -x } +  \dfrac{1}{\sqrt{x-1}}	 	\label{fn-ex-08}\\
+%eq(8)
+y & = \sqrt{x-1} +	\dfrac{1}{\sqrt{2 -x }} \label{fn-ex-09}
+%eq(9)
+\end{align}
+\rdr It is not difficult. The domain of function \eqref{fn-ex-01} is the interval $(-1, \, 1]$; that of \eqref{fn-ex-02} is $[1, \, \infty[$; that of \eqref{fn-ex-03} is $]-\infty, \, 2]$; that of \eqref{fn-ex-04} is $]\, 1, \infty[$; that of \eqref{fn-ex-05} is $]\infty, 2[$; that of \eqref{fn-ex-06} is $[1, 2]$, etc.
+
+\athr Yes, quite right, but may I interrupt you to emphasize that if a function is a sum (a difference, or a product) of two functions, its domain is represented by the \emph{intersection} of the sets which are the domains of the constituent functions. It is well illustrated by function \eqref{fn-ex-06}. As a matter of fact, the same rule must be applied to functions \eqref{fn-ex-07}-\eqref{fn-ex-09}. Please, continue.
+
+\rdr The domains of the remaining functions are \eqref{fn-ex-07} $]1, 2[$; \eqref{fn-ex-08} $]1,2]$; \eqref{fn-ex-09} $[1, 2[$.
+
+\athr And what can you say about the domain of the function $y= \sqrt{x -2 } + \sqrt{1 -x }$?
+
+\rdr The domain of  $y= \sqrt{x -2 }$ is $[2, \infty[$, while that of  $y= \sqrt{1 -x }$is $]- \infty, 1]$. These intervals do not intersect.
+
+\athr It means	that the formula  $y= \sqrt{x -2 } + \sqrt{1 -x }$ does not define any function.
+}

@@ -1,0 +1,196 @@
+{\noindent
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.2cm,y=0.3cm]
+\foreach \x in {0,10,20,30,40}
+\draw[shift={(\x,-4)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+%\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-5.5,-6) rectangle (52,6);
+\foreach \x in {1,...,40}
+\draw [line width=.75pt,dash pattern=on 5pt off 5pt,color=DarkGray] (\x,4.)-- (\x,-4.);
+
+\draw [line width=1pt,dash pattern=on 3pt off 3pt,color=IndianRed] (0.,0.)-- (42.,0.);
+\draw [->,line width=1.2pt,color=DarkGray] (0.,-4.) -- (0.,5.348012295333778);
+\draw [->,line width=1.2pt,color=DarkGray] (0.,-4.) -- (50,-4.);
+\draw (-.5,4.5) node[left] {\footnotesize$y_{n}$};
+\draw (0,0) node[left] {\footnotesize$a$};
+\draw (48,-4.028170894118617) node[below] {\footnotesize$n$};
+\begin{scriptsize}
+\draw (-2.8,-4) node[left] {\normalsize \textit{ (a)}};
+\filldraw [IndianRed] (0.,0.) circle (1.5pt);
+\filldraw [IndianRed] (1.,-3.24098) circle (1.5pt);
+\filldraw [IndianRed] (2.,3.49351) circle (1.5pt);
+\filldraw [IndianRed] (3.,-3.24098) circle (1.5pt);
+\filldraw [IndianRed] (4.,1.92) circle (1.5pt);
+\filldraw [IndianRed] (5.,0.) circle (1.5pt);
+\filldraw [IndianRed] (6.,2.84361) circle (1.5pt);
+\filldraw [IndianRed] (7.,-3.1191) circle (1.5pt);
+\filldraw [IndianRed] (8.,2.53306) circle (1.5pt);
+\filldraw [IndianRed] (9.,-2.5808) circle (1.5pt);
+\filldraw [IndianRed] (10.,1.19082) circle (1.5pt);
+\filldraw [IndianRed] (11.,2.11898) circle (1.5pt);
+\filldraw [IndianRed] (13.,2.05687) circle (1.5pt);
+\filldraw [IndianRed] (12.,-2.97418) circle (1.5pt);
+\filldraw [IndianRed] (14.053794841260318,-1.0487146075110734) circle (1.5pt);
+\filldraw [IndianRed] (16.,1.04238) circle (1.5pt);
+\filldraw [IndianRed] (15.,-1.87687) circle (1.5pt);
+\filldraw [IndianRed] (17.,-1.66983) circle (1.5pt);
+\filldraw [IndianRed] (18.,-0.59323) circle (1.5pt);
+\filldraw [IndianRed] (19.,0.) circle (1.5pt);
+\filldraw [IndianRed] (20.,1.39434) circle (1.5pt);
+\filldraw [IndianRed] (21.,0.77323) circle (1.5pt);
+\filldraw [IndianRed] (22.,-1.54561) circle (1.5pt);
+\filldraw [IndianRed] (23.,-0.67604) circle (1.5pt);
+\filldraw [IndianRed] (24.,0.56619) circle (1.5pt);
+\filldraw [IndianRed] (25.,1.35294) circle (1.5pt);
+\filldraw [IndianRed] (26.,0.) circle (1.5pt);
+\filldraw [IndianRed] (27.,-1.06942) circle (1.5pt);
+\filldraw [IndianRed] (28.,0.52478) circle (1.5pt);
+\filldraw [IndianRed] (29.,-0.51041) circle (1.5pt);
+\filldraw [IndianRed] (30.,-0.51041) circle (1.5pt);
+\filldraw [IndianRed] (31.,0.46267) circle (1.5pt);
+\filldraw [IndianRed] (32.,0.44196) circle (1.5pt);
+\filldraw [IndianRed] (33.,0.71112) circle (1.5pt);
+\filldraw [IndianRed] (34.,-0.51041) circle (1.5pt);
+\filldraw [IndianRed] (35.,0.25563) circle (1.5pt);
+\filldraw [IndianRed] (36.,0.29704) circle (1.5pt);
+\filldraw [IndianRed] (37.,-0.05493) circle (1.5pt);
+\filldraw [IndianRed] (38.,-0.48971) circle (1.5pt);
+\filldraw [IndianRed] (39.,0.25563) circle (1.5pt);
+\filldraw [IndianRed] (40.,0.25563) circle (1.5pt);
+\end{scriptsize}
+\end{tikzpicture}
+% part 2
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.2cm,y=0.3cm]
+\foreach \x in {0,10,20,30,40}
+\draw[shift={(\x,-4)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+%\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-5.5,-6) rectangle (52,6);
+\foreach \x in {1,...,40}
+\draw [line width=.75pt,dash pattern=on 5pt off 5pt,color=DarkGray] (\x,4.)-- (\x,-4.);
+\draw [line width=.5pt,dash pattern=on 5pt off 5pt,color=DodgerBlue] (0.,2.8)-- (44.,2.8);
+\draw [line width=.5pt,dash pattern=on 5pt off 5pt,color=DodgerBlue] (0.,-2.8)-- (44.,-2.8);
+\draw [<->,line width=.75pt,color=DarkGray] (43,2.8)-- (43,-2.8);
+\draw (43,0) node[right,color=black] {\footnotesize $2 \varepsilon$};
+\draw (0.,2.8) node[left,color=black] {\footnotesize $a + \varepsilon$};
+\draw (0.,-2.8) node[left,color=black] {\footnotesize $a - \varepsilon$};
+\draw [line width=1pt,dash pattern=on 3pt off 3pt,color=IndianRed] (0.,0.)-- (42.,0.);
+\draw [->,line width=1.2pt,color=DarkGray] (0.,-4.) -- (0.,5.348012295333778);
+\draw [->,line width=1.2pt,color=DarkGray] (0.,-4.) -- (50,-4.);
+\draw (-.5,4.5) node[left] {\footnotesize $y_{n}$};
+\draw (0,0) node[left] {\footnotesize $a$};
+\draw (48,-4) node[below] {\footnotesize $n$};
+\begin{scriptsize}
+\draw (-2.8,-4) node[left] {\normalsize \textit{(b)}};
+\filldraw [IndianRed] (0.,0.) circle (1.5pt);
+\filldraw [IndianRed] (1.,-3.24098) circle (1.5pt);
+\filldraw [IndianRed] (2.,3.49351) circle (1.5pt);
+\filldraw [IndianRed] (3.,-3.24098) circle (1.5pt);
+\filldraw [IndianRed] (4.,1.92) circle (1.5pt);
+\filldraw [IndianRed] (5.,0.) circle (1.5pt);
+\filldraw [IndianRed] (6.,2.84361) circle (1.5pt);
+\filldraw [IndianRed] (7.,-3.1191) circle (1.5pt);
+\filldraw [IndianRed] (8.,2.53306) circle (1.5pt);
+\filldraw [IndianRed] (9.,-2.5808) circle (1.5pt);
+\filldraw [IndianRed] (10.,1.19082) circle (1.5pt);
+\filldraw [IndianRed] (11.,2.11898) circle (1.5pt);
+\filldraw [IndianRed] (13.,2.05687) circle (1.5pt);
+\filldraw [IndianRed] (12.,-2.97418) circle (1.5pt);
+\filldraw [IndianRed] (14.053794841260318,-1.0487146075110734) circle (1.5pt);
+\filldraw [IndianRed] (16.,1.04238) circle (1.5pt);
+\filldraw [IndianRed] (15.,-1.87687) circle (1.5pt);
+\filldraw [IndianRed] (17.,-1.66983) circle (1.5pt);
+\filldraw [IndianRed] (18.,-0.59323) circle (1.5pt);
+\filldraw [IndianRed] (19.,0.) circle (1.5pt);
+\filldraw [IndianRed] (20.,1.39434) circle (1.5pt);
+\filldraw [IndianRed] (21.,0.77323) circle (1.5pt);
+\filldraw [IndianRed] (22.,-1.54561) circle (1.5pt);
+\filldraw [IndianRed] (23.,-0.67604) circle (1.5pt);
+\filldraw [IndianRed] (24.,0.56619) circle (1.5pt);
+\filldraw [IndianRed] (25.,1.35294) circle (1.5pt);
+\filldraw [IndianRed] (26.,0.) circle (1.5pt);
+\filldraw [IndianRed] (27.,-1.06942) circle (1.5pt);
+\filldraw [IndianRed] (28.,0.52478) circle (1.5pt);
+\filldraw [IndianRed] (29.,-0.51041) circle (1.5pt);
+\filldraw [IndianRed] (30.,-0.51041) circle (1.5pt);
+\filldraw [IndianRed] (31.,0.46267) circle (1.5pt);
+\filldraw [IndianRed] (32.,0.44196) circle (1.5pt);
+\filldraw [IndianRed] (33.,0.71112) circle (1.5pt);
+\filldraw [IndianRed] (34.,-0.51041) circle (1.5pt);
+\filldraw [IndianRed] (35.,0.25563) circle (1.5pt);
+\filldraw [IndianRed] (36.,0.29704) circle (1.5pt);
+\filldraw [IndianRed] (37.,-0.05493) circle (1.5pt);
+\filldraw [IndianRed] (38.,-0.48971) circle (1.5pt);
+\filldraw [IndianRed] (39.,0.25563) circle (1.5pt);
+\filldraw [IndianRed] (40.,0.25563) circle (1.5pt);
+\end{scriptsize}
+\end{tikzpicture}
+% part 3
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.2cm,y=0.3cm]
+\foreach \x in {0,10,20,30,40}
+\draw[shift={(\x,-4)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+%\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-5.5,-6) rectangle (52,6);
+\foreach \x in {1,...,40}
+\draw [line width=.75pt,dash pattern=on 5pt off 5pt,color=DarkGray] (\x,4.)-- (\x,-4.);
+\draw [line width=1pt,dash pattern=on 3pt off 3pt,color=IndianRed] (0.,0.)-- (42.,0.);
+\draw [->,line width=1.2pt,color=DarkGray] (0.,-4.) -- (0.,5.348012295333778);
+\draw [->,line width=1.2pt,color=DarkGray] (0.,-4.) -- (50,-4.);
+\draw (-.5,4.5) node[left] {\footnotesize$y_{n}$};
+\draw (0,0) node[left] {\footnotesize$a$};
+\draw [line width=.5pt,dash pattern=on 5pt off 5pt,color=DodgerBlue] (7.,2)-- (50.,2);
+\draw [line width=.5pt,dash pattern=on 5pt off 5pt,color=DodgerBlue] (7.,-2)-- (50.,-2);
+\draw [line width=.5pt,dash pattern=on 5pt off 5pt,color=DodgerBlue] (15.,1.2)-- (47.,1.2);
+\draw [line width=.5pt,dash pattern=on 5pt off 5pt,color=DodgerBlue] (15.,-1.2)-- (47.,-1.2);
+\draw [line width=.5pt,dash pattern=on 5pt off 5pt,color=DodgerBlue] (27.,.5)-- (43.,.5);
+\draw [line width=.5pt,dash pattern=on 5pt off 5pt,color=DodgerBlue] (27.,-.5)-- (43.,-.5);
+\draw (48,-4.028170894118617) node[below] {\footnotesize$n$};
+\draw [<->,line width=.75pt,color=DarkGray] (49,2)-- (49,-2);
+\draw [<->,line width=.75pt,color=DarkGray] (46,1.2)-- (46,-1.2);
+\draw (49,0) node[right,color=black] {\footnotesize $2 \varepsilon_{1}$};
+\draw (46,0) node[right,color=black] {\footnotesize $2 \varepsilon_{2}$};
+\draw (42,0) node[right,color=black] {\footnotesize $2 \varepsilon_{3}$};
+\begin{scriptsize}
+\draw (-2.8,-4) node[left] {\normalsize \textit{(c)}};
+\filldraw [IndianRed] (0.,0.) circle (1.5pt);
+\filldraw [IndianRed] (1.,-3.24098) circle (1.5pt);
+\filldraw [IndianRed] (2.,3.49351) circle (1.5pt);
+\filldraw [IndianRed] (3.,-3.24098) circle (1.5pt);
+\filldraw [IndianRed] (4.,1.92) circle (1.5pt);
+\filldraw [IndianRed] (5.,0.) circle (1.5pt);
+\filldraw [IndianRed] (6.,2.84361) circle (1.5pt);
+\filldraw [IndianRed] (7.,-3.1191) circle (1.5pt);
+\filldraw [IndianRed] (8.,2.53306) circle (1.5pt);
+\filldraw [IndianRed] (9.,-2.5808) circle (1.5pt);
+\filldraw [IndianRed] (10.,1.19082) circle (1.5pt);
+\filldraw [IndianRed] (11.,2.11898) circle (1.5pt);
+\filldraw [IndianRed] (13.,2.05687) circle (1.5pt);
+\filldraw [IndianRed] (12.,-2.97418) circle (1.5pt);
+\filldraw [IndianRed] (14.053794841260318,-1.0487146075110734) circle (1.5pt);
+\filldraw [IndianRed] (16.,1.04238) circle (1.5pt);
+\filldraw [IndianRed] (15.,-1.87687) circle (1.5pt);
+\filldraw [IndianRed] (17.,-1.66983) circle (1.5pt);
+\filldraw [IndianRed] (18.,-0.59323) circle (1.5pt);
+\filldraw [IndianRed] (19.,0.) circle (1.5pt);
+\filldraw [IndianRed] (20.,1.39434) circle (1.5pt);
+\filldraw [IndianRed] (21.,0.77323) circle (1.5pt);
+\filldraw [IndianRed] (22.,-1.54561) circle (1.5pt);
+\filldraw [IndianRed] (23.,-0.67604) circle (1.5pt);
+\filldraw [IndianRed] (24.,0.56619) circle (1.5pt);
+\filldraw [IndianRed] (25.,1.35294) circle (1.5pt);
+\filldraw [IndianRed] (26.,0.) circle (1.5pt);
+\filldraw [IndianRed] (27.,-1.06942) circle (1.5pt);
+\filldraw [IndianRed] (28.,0.52478) circle (1.5pt);
+\filldraw [IndianRed] (29.,-0.51041) circle (1.5pt);
+\filldraw [IndianRed] (30.,-0.51041) circle (1.5pt);
+\filldraw [IndianRed] (31.,0.46267) circle (1.5pt);
+\filldraw [IndianRed] (32.,0.44196) circle (1.5pt);
+\filldraw [IndianRed] (33.,0.71112) circle (1.5pt);
+\filldraw [IndianRed] (34.,-0.51041) circle (1.5pt);
+\filldraw [IndianRed] (35.,0.25563) circle (1.5pt);
+\filldraw [IndianRed] (36.,0.29704) circle (1.5pt);
+\filldraw [IndianRed] (37.,-0.05493) circle (1.5pt);
+\filldraw [IndianRed] (38.,-0.48971) circle (1.5pt);
+\filldraw [IndianRed] (39.,0.25563) circle (1.5pt);
+\filldraw [IndianRed] (40.,0.25563) circle (1.5pt);
+\end{scriptsize}
+\end{tikzpicture}
+}

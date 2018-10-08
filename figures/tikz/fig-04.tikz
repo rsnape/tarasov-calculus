@@ -1,0 +1,58 @@
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=3.5cm]
+\foreach \x in {1,2,3,4,5,6,7,9}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\foreach \y in {-1,0,1}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\clip(-1.4,-1.1) rectangle (11.4,1.3);
+\draw (-0.641960402073037,1.1784020472890375) node[anchor=north west] {$y_{n}$};
+\draw (11,0) node[anchor=north west] {$n$};
+\draw (10,-0.015) node[anchor=north west] {\footnotesize $10$};
+\draw (8,-0.015) node[anchor=north west] {\footnotesize $8$};
+\draw [->,line width=1.2pt,color=DarkGray] (0.,-1.0) -- (0.,1.2);
+\draw [->,line width=1.2pt,color=DarkGray] (0.,0.) -- (11.2,0.);
+\draw [line width=.75pt,dash pattern=on 3pt off 3pt,color=DarkGray] (0.,1.)-- (1.,1.);
+\draw [line width=.75pt,dash pattern=on 3pt off 3pt,color=DarkGray] (1.,1.)-- (1.,0.);
+\draw [line width=.75pt,dash pattern=on 3pt off 3pt,color=DarkGray] (0.,-1.)-- (2.,-1.);
+\draw [line width=.75pt,dash pattern=on 3pt off 3pt,color=DarkGray] (2.,-1.)-- (2.,0.);
+\draw [line width=.75pt,dash pattern=on 3pt off 3pt,color=DarkGray] (0.,0.3333333333333333)-- (3.,0.3333333333333333);
+\draw [line width=.75pt,dash pattern=on 3pt off 3pt,color=DarkGray] (3.,0.3333333333333333)-- (3.,0.);
+\draw [line width=.75pt,dash pattern=on 3pt off 3pt,color=DarkGray] (4.,0.)-- (4.,-0.3333333333333333);
+\draw [line width=.75pt,dash pattern=on 3pt off 3pt,color=DarkGray] (4.,-0.3333333333333333)-- (0.,-0.3333333333333333);
+\draw [line width=.75pt,dash pattern=on 3pt off 3pt,color=DarkGray] (0.,0.2)-- (5.,0.2);
+\draw [line width=.75pt,dash pattern=on 3pt off 3pt,color=DarkGray] (5.,0.2)-- (5.,0.);
+\draw [line width=.75pt,dash pattern=on 3pt off 3pt,color=DarkGray] (6.,0.)-- (6.,-0.2);
+\draw [line width=.75pt,dash pattern=on 3pt off 3pt,color=DarkGray] (0.,-0.2)-- (6.,-0.2);
+\draw [line width=.75pt,dash pattern=on 3pt off 3pt,color=DarkGray] (7.,0.14285714285714285)-- (7.,0.);
+\draw [line width=.75pt,dash pattern=on 3pt off 3pt,color=DarkGray] (8.,-0.14285714285714285)-- (8.,0.);
+\draw [line width=.75pt,dash pattern=on 3pt off 3pt,color=DarkGray] (9.,0.125)-- (9.,0.);
+\draw [line width=.75pt,dash pattern=on 3pt off 3pt,color=DarkGray] (10.,-0.125)-- (10.,0.);
+\begin{scriptsize}
+\filldraw [IndianRed] (1.,1.) circle (2.5pt);
+\filldraw [IndianRed] (2.,-1.) circle (2.5pt);
+\filldraw [IndianRed] (3.,0.3333333333333333) circle (2.5pt);
+\filldraw [IndianRed] (4.,-0.3333333333333333) circle (2.5pt);
+\filldraw [IndianRed] (5.,0.2) circle (2.5pt);
+\filldraw [IndianRed] (6.,-0.2) circle (2.5pt);
+\filldraw [IndianRed] (7.,0.14285714285714285) circle (2.5pt);
+\filldraw [IndianRed] (8.,-0.14285714285714285) circle (2.5pt);
+\filldraw [DodgerBlue] (1.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (2.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (3.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (4.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (5.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (6.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (7.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (8.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (9.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (10.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (0.,0.3333333333333333) circle (2.5pt);
+\filldraw [DodgerBlue] (0.,-0.3333333333333333) circle (2.5pt);
+\filldraw [DodgerBlue] (0.,0.2) circle (2.5pt);
+\filldraw [DodgerBlue] (0.,-0.2) circle (2.5pt);
+\filldraw [DodgerBlue] (0.,1.) circle (2.5pt);
+\filldraw [DodgerBlue] (0.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (0.,-1.) circle (2.5pt);
+\filldraw [IndianRed] (9.,0.125) circle (2.5pt);
+\filldraw [IndianRed] (10.,-0.125) circle (2.5pt);
+\end{scriptsize}
+\end{tikzpicture}

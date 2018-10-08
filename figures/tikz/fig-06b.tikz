@@ -1,0 +1,30 @@
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=10.5cm,y=2.0cm]
+\foreach \x in {0,0.5,0.6,0.8,0.9,1}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\clip(-0.02,-0.2) rectangle (1.3,0.4);
+\draw (4.214177852337174,0.002715213130875362) node[anchor=north west] {$y$};
+\draw (0.80,0.1) node[above] {$y_{4}$};
+\draw (2.9578364575840723,0.1) node[above] {$y_{9}$};
+\draw (0.75,0.1) node[above] {$y_{3}$};
+\draw (0.67,0.1) node[above] {$y_{2}$};
+\draw (0.5,0.1) node[above] {$y_{1}$};
+\draw (0.0702198757690745,0.4) node[anchor=north west,color=IndianRed] {\textit{Sequence}\,\, (5)};
+\draw [->,line width=1.2pt,color=DarkGray] (0.,0.) -- (1.1,0.);
+\begin{scriptsize}
+\filldraw [DodgerBlue] (0.5,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (0.667,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (0.75,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (0.8,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (0.833,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (0.857,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (0.875,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (0.889,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (0.9,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (0.917,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (0.923,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (0.933,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (0.941,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (0.,0.) circle (2.5pt);
+\filldraw [DodgerBlue] (0.,0.) circle (2.5pt);
+\end{scriptsize}
+\end{tikzpicture}

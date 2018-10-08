@@ -1,0 +1,14 @@
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw[shift={(0,0.9)},color=black] node[anchor = north west] {\footnotesize $1$};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-3,-0.5) rectangle (4.1,4.5);
+\draw [->,line width=1.2pt,color=DarkGray] (-4.,0.) -- (4.,0.);
+\draw [->,line width=1.2pt,color=DarkGray] (0.,-0.5) -- (0.,4.);
+\draw [line width=.75pt,dash pattern=on 3pt off 3pt,color=DarkGray,domain=-4.813522986390233:5.242011934665382] plot(\x,{(--1.-0.*\x)/1.});
+\draw (-2.8,1.6) node[anchor=north west] {\footnotesize $ y = 1+ x^{2}$};
+\draw[line width=1.pt,color=IndianRed,smooth,samples=100,domain=-3:3] plot(\x,{1.0+(\x)^(2.0)});
+
+
+%  \draw[step=.5cm,gray,very thin] (-5,-5) grid (5,5);
+
+\end{tikzpicture}

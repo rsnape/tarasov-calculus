@@ -1,0 +1,20 @@
+\begin{tikzpicture}[opacity=0.4]
+  \filldraw [color=IndianRed=1.5,x radius=3cm, y radius=2cm](1,0) circle;
+  \filldraw [color=DodgerBlue,radius=1.5,x radius=2.3cm, y radius=1cm](1,-1) circle;
+  \filldraw [color=SteelBlue,radius=1.5,x radius=2cm, y radius=1.5cm,rotate=20](0,-2.5) circle;
+\clip(0,-4) rectangle (6.2,2);
+\draw (3,1.8) node[right,color=IndianRed,opaque] {\footnotesize \textit{Bounded Sequences}};
+\draw (2.6,-2.8) node[right,color=SteelBlue,opaque] {\footnotesize \textit{Monotonic Sequences}};
+\draw (3,-1.8) node[right,color=IndianRed] {\footnotesize \textit{Convergent Sequences}};
+\draw (3,-1.8) node[right,color=DodgerBlue] {\footnotesize \textit{Convergent Sequences}};
+\draw (1,-1.2) node[right,color=Black,opaque] {\footnotesize $A$};
+  \filldraw [color=black,radius=0.8mm,opaque] (1,-1.2) circle;
+\draw (1.4,-.4) node[right,color=Black,opaque] {\footnotesize $B$};
+  \filldraw [color=black,radius=0.8mm,opaque](1.4,-.4) circle;
+\draw (2,.5) node[right,color=Black,opaque] {\footnotesize $C$};
+  \filldraw [color=black,radius=0.8mm,opaque](2,.5) circle;
+\draw (1,-2.3) node[right,color=Black,opaque] {\footnotesize $D$};
+  \filldraw [color=black,radius=0.8mm,opaque](1,-2.3)  circle;
+\draw (2,-3.8) node[right,color=Black,opaque] {\footnotesize $E$};
+  \filldraw [color=black,radius=0.8mm,opaque](2,-3.8) circle;
+\end{tikzpicture}
