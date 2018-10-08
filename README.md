@@ -18,7 +18,7 @@ Each chapter has a seperate .tex file for easier management.
 
 Figures 
 
-The figures 
-
-Some of the diagrams have been recreated using TiKz, mostly from using the export
-option in GeoGebra. 
+The figures are placed right now into two folders. One folder has scans in the 
+form of PDF and PNGs. Other folder has tikz and ggb files, but this set is not 
+complete as yet. Some of the diagrams have been recreated using TiKz, 
+mostly from using the export option in GeoGebra. 
